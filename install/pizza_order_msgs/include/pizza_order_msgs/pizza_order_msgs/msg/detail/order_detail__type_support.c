@@ -35,7 +35,24 @@ void pizza_order_msgs__msg__OrderDetail__rosidl_typesupport_introspection_c__Ord
   pizza_order_msgs__msg__OrderDetail__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember pizza_order_msgs__msg__OrderDetail__rosidl_typesupport_introspection_c__OrderDetail_message_member_array[4] = {
+static rosidl_typesupport_introspection_c__MessageMember pizza_order_msgs__msg__OrderDetail__rosidl_typesupport_introspection_c__OrderDetail_message_member_array[5] = {
+  {
+    "detail_id",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(pizza_order_msgs__msg__OrderDetail, detail_id),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "item_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
@@ -109,7 +126,7 @@ static rosidl_typesupport_introspection_c__MessageMember pizza_order_msgs__msg__
 static const rosidl_typesupport_introspection_c__MessageMembers pizza_order_msgs__msg__OrderDetail__rosidl_typesupport_introspection_c__OrderDetail_message_members = {
   "pizza_order_msgs__msg",  // message namespace
   "OrderDetail",  // message name
-  4,  // number of fields
+  5,  // number of fields
   sizeof(pizza_order_msgs__msg__OrderDetail),
   pizza_order_msgs__msg__OrderDetail__rosidl_typesupport_introspection_c__OrderDetail_message_member_array,  // message members
   pizza_order_msgs__msg__OrderDetail__rosidl_typesupport_introspection_c__OrderDetail_init_function,  // function to initialize message memory (memory has to be allocated)

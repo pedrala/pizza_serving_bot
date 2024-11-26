@@ -46,11 +46,14 @@ class KitchenNode(Node):
         self.cursor.execute('INSERT INTO order_table (order_id, table_number) VALUES (?, ?)',
                             (request.order_id, request.table_number))
 
-        # Insert details into order_detail
-        for i, item_name in enumerate(request.item_name):
-            detail_id = request.detail_id + i
+        # Initialize detail_id counter
+        detail_id = 1  # Start with 1 or other logic for auto-increment
+
+        for order_detail in request.order_details:
+            # Insert the details into the database
             self.cursor.execute('INSERT INTO order_detail (detail_id, order_id, item_id, item_name, quantity, price) VALUES (?, ?, ?, ?, ?, ?)',
-                                (detail_id, request.order_id, detail_id, item_name, request.quantity, request.price))
+                                (detail_id, request.order_id, order_detail.item_id, order_detail.item_name, order_detail.quantity, order_detail.price))
+            detail_id += 1  # Increment for the next detail
 
         self.conn.commit()
 
@@ -111,7 +114,7 @@ def main():
     kitchen_app.show()
 
     try:
-        rclpy.spin(kitchen_node)
+        rclpy.spin(kitchen_node)  # Add this line to keep the service alive and listen for requests
     except KeyboardInterrupt:
         kitchen_node.close_database()
     finally:

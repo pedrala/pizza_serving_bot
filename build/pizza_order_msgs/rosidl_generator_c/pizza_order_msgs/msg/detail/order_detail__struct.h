@@ -24,6 +24,7 @@ extern "C"
 /// Struct defined in msg/OrderDetail in the package pizza_order_msgs.
 typedef struct pizza_order_msgs__msg__OrderDetail
 {
+  int32_t detail_id;
   int8_t item_id;
   rosidl_runtime_c__String item_name;
   int8_t quantity;

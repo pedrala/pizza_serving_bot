@@ -51,6 +51,11 @@ static bool _OrderDetail__cdr_serialize(
     return false;
   }
   const _OrderDetail__ros_msg_type * ros_message = static_cast<const _OrderDetail__ros_msg_type *>(untyped_ros_message);
+  // Field name: detail_id
+  {
+    cdr << ros_message->detail_id;
+  }
+
   // Field name: item_id
   {
     cdr << ros_message->item_id;
@@ -92,6 +97,11 @@ static bool _OrderDetail__cdr_deserialize(
     return false;
   }
   _OrderDetail__ros_msg_type * ros_message = static_cast<_OrderDetail__ros_msg_type *>(untyped_ros_message);
+  // Field name: detail_id
+  {
+    cdr >> ros_message->detail_id;
+  }
+
   // Field name: item_id
   {
     cdr >> ros_message->item_id;
@@ -140,6 +150,12 @@ size_t get_serialized_size_pizza_order_msgs__msg__OrderDetail(
   (void)padding;
   (void)wchar_size;
 
+  // field.name detail_id
+  {
+    size_t item_size = sizeof(ros_message->detail_id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name item_id
   {
     size_t item_size = sizeof(ros_message->item_id);
@@ -191,6 +207,14 @@ size_t max_serialized_size_pizza_order_msgs__msg__OrderDetail(
   full_bounded = true;
   is_plain = true;
 
+  // member: detail_id
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
   // member: item_id
   {
     size_t array_size = 1;

@@ -38,6 +38,7 @@ struct OrderDetail_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->detail_id = 0l;
       this->item_id = 0;
       this->item_name = "";
       this->quantity = 0;
@@ -51,6 +52,7 @@ struct OrderDetail_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->detail_id = 0l;
       this->item_id = 0;
       this->item_name = "";
       this->quantity = 0;
@@ -59,6 +61,9 @@ struct OrderDetail_
   }
 
   // field types and members
+  using _detail_id_type =
+    int32_t;
+  _detail_id_type detail_id;
   using _item_id_type =
     int8_t;
   _item_id_type item_id;
@@ -73,6 +78,12 @@ struct OrderDetail_
   _price_type price;
 
   // setters for named parameter idiom
+  Type & set__detail_id(
+    const int32_t & _arg)
+  {
+    this->detail_id = _arg;
+    return *this;
+  }
   Type & set__item_id(
     const int8_t & _arg)
   {
@@ -140,6 +151,9 @@ struct OrderDetail_
   // comparison operators
   bool operator==(const OrderDetail_ & other) const
   {
+    if (this->detail_id != other.detail_id) {
+      return false;
+    }
     if (this->item_id != other.item_id) {
       return false;
     }

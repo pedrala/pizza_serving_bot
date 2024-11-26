@@ -32,6 +32,8 @@ cdr_serialize(
   const pizza_order_msgs::msg::OrderDetail & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: detail_id
+  cdr << ros_message.detail_id;
   // Member: item_id
   cdr << ros_message.item_id;
   // Member: item_name
@@ -49,6 +51,9 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   pizza_order_msgs::msg::OrderDetail & ros_message)
 {
+  // Member: detail_id
+  cdr >> ros_message.detail_id;
+
   // Member: item_id
   cdr >> ros_message.item_id;
 
@@ -77,6 +82,12 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: detail_id
+  {
+    size_t item_size = sizeof(ros_message.detail_id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: item_id
   {
     size_t item_size = sizeof(ros_message.item_id);
@@ -122,6 +133,15 @@ max_serialized_size_OrderDetail(
   full_bounded = true;
   is_plain = true;
 
+
+  // Member: detail_id
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   // Member: item_id
   {

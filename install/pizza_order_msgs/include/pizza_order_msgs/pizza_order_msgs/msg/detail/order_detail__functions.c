@@ -21,6 +21,7 @@ pizza_order_msgs__msg__OrderDetail__init(pizza_order_msgs__msg__OrderDetail * ms
   if (!msg) {
     return false;
   }
+  // detail_id
   // item_id
   // item_name
   if (!rosidl_runtime_c__String__init(&msg->item_name)) {
@@ -38,6 +39,7 @@ pizza_order_msgs__msg__OrderDetail__fini(pizza_order_msgs__msg__OrderDetail * ms
   if (!msg) {
     return;
   }
+  // detail_id
   // item_id
   // item_name
   rosidl_runtime_c__String__fini(&msg->item_name);
@@ -49,6 +51,10 @@ bool
 pizza_order_msgs__msg__OrderDetail__are_equal(const pizza_order_msgs__msg__OrderDetail * lhs, const pizza_order_msgs__msg__OrderDetail * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // detail_id
+  if (lhs->detail_id != rhs->detail_id) {
     return false;
   }
   // item_id
@@ -80,6 +86,8 @@ pizza_order_msgs__msg__OrderDetail__copy(
   if (!input || !output) {
     return false;
   }
+  // detail_id
+  output->detail_id = input->detail_id;
   // item_id
   output->item_id = input->item_id;
   // item_name

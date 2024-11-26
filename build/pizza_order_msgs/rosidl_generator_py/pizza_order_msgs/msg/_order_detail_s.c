@@ -53,6 +53,15 @@ bool pizza_order_msgs__msg__order_detail__convert_from_py(PyObject * _pymsg, voi
     assert(strncmp("pizza_order_msgs.msg._order_detail.OrderDetail", full_classname_dest, 46) == 0);
   }
   pizza_order_msgs__msg__OrderDetail * ros_message = _ros_message;
+  {  // detail_id
+    PyObject * field = PyObject_GetAttrString(_pymsg, "detail_id");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->detail_id = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
   {  // item_id
     PyObject * field = PyObject_GetAttrString(_pymsg, "item_id");
     if (!field) {
@@ -117,6 +126,17 @@ PyObject * pizza_order_msgs__msg__order_detail__convert_to_py(void * raw_ros_mes
     }
   }
   pizza_order_msgs__msg__OrderDetail * ros_message = (pizza_order_msgs__msg__OrderDetail *)raw_ros_message;
+  {  // detail_id
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->detail_id);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "detail_id", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // item_id
     PyObject * field = NULL;
     field = PyLong_FromLong(ros_message->item_id);

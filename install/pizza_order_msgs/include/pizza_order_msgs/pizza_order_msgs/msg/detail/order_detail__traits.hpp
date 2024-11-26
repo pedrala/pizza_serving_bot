@@ -25,6 +25,13 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: detail_id
+  {
+    out << "detail_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.detail_id, out);
+    out << ", ";
+  }
+
   // member: item_id
   {
     out << "item_id: ";
@@ -58,6 +65,16 @@ inline void to_block_style_yaml(
   const OrderDetail & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: detail_id
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "detail_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.detail_id, out);
+    out << "\n";
+  }
+
   // member: item_id
   {
     if (indentation > 0) {

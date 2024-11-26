@@ -57,6 +57,7 @@ class OrderDetail(metaclass=Metaclass_OrderDetail):
     """Message class 'OrderDetail'."""
 
     __slots__ = [
+        '_detail_id',
         '_item_id',
         '_item_name',
         '_quantity',
@@ -64,6 +65,7 @@ class OrderDetail(metaclass=Metaclass_OrderDetail):
     ]
 
     _fields_and_field_types = {
+        'detail_id': 'int32',
         'item_id': 'int8',
         'item_name': 'string',
         'quantity': 'int8',
@@ -71,6 +73,7 @@ class OrderDetail(metaclass=Metaclass_OrderDetail):
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int8'),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.BasicType('int8'),  # noqa: E501
@@ -81,6 +84,7 @@ class OrderDetail(metaclass=Metaclass_OrderDetail):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.detail_id = kwargs.get('detail_id', int())
         self.item_id = kwargs.get('item_id', int())
         self.item_name = kwargs.get('item_name', str())
         self.quantity = kwargs.get('quantity', int())
@@ -115,6 +119,8 @@ class OrderDetail(metaclass=Metaclass_OrderDetail):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.detail_id != other.detail_id:
+            return False
         if self.item_id != other.item_id:
             return False
         if self.item_name != other.item_name:
@@ -129,6 +135,21 @@ class OrderDetail(metaclass=Metaclass_OrderDetail):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def detail_id(self):
+        """Message field 'detail_id'."""
+        return self._detail_id
+
+    @detail_id.setter
+    def detail_id(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'detail_id' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'detail_id' field must be an integer in [-2147483648, 2147483647]"
+        self._detail_id = value
 
     @builtins.property
     def item_id(self):

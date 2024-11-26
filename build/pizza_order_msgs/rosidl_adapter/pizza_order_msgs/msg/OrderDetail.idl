@@ -6,6 +6,8 @@
 module pizza_order_msgs {
   module msg {
     struct OrderDetail {
+      int32 detail_id;
+
       int8 item_id;
 
       string item_name;

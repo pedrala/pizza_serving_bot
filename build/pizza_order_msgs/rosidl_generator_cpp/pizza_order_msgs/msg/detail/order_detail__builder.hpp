@@ -72,13 +72,29 @@ private:
 class Init_OrderDetail_item_id
 {
 public:
-  Init_OrderDetail_item_id()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_OrderDetail_item_id(::pizza_order_msgs::msg::OrderDetail & msg)
+  : msg_(msg)
   {}
   Init_OrderDetail_item_name item_id(::pizza_order_msgs::msg::OrderDetail::_item_id_type arg)
   {
     msg_.item_id = std::move(arg);
     return Init_OrderDetail_item_name(msg_);
+  }
+
+private:
+  ::pizza_order_msgs::msg::OrderDetail msg_;
+};
+
+class Init_OrderDetail_detail_id
+{
+public:
+  Init_OrderDetail_detail_id()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_OrderDetail_item_id detail_id(::pizza_order_msgs::msg::OrderDetail::_detail_id_type arg)
+  {
+    msg_.detail_id = std::move(arg);
+    return Init_OrderDetail_item_id(msg_);
   }
 
 private:
@@ -96,7 +112,7 @@ template<>
 inline
 auto build<::pizza_order_msgs::msg::OrderDetail>()
 {
-  return pizza_order_msgs::msg::builder::Init_OrderDetail_item_id();
+  return pizza_order_msgs::msg::builder::Init_OrderDetail_detail_id();
 }
 
 }  // namespace pizza_order_msgs

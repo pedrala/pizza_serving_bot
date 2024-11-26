@@ -6,7 +6,7 @@ from pizza_order_msgs.msg import OrderDetail  # OrderDetail 메시지 임포트
 class TableNode(Node):
     def __init__(self):
         super().__init__('table_node')
-        self.cli = self.create_client(OrderService, 'place_order')
+        self.cli = self.create_client(OrderService, 'process_order')
 
         # Ensure the service is available
         while not self.cli.wait_for_service(timeout_sec=1.0):
