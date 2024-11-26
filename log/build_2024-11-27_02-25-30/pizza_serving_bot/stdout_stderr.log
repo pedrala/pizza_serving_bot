@@ -1,0 +1,78 @@
+running egg_info
+creating ../build/pizza_serving_bot/pizza_serving_bot.egg-info
+writing ../build/pizza_serving_bot/pizza_serving_bot.egg-info/PKG-INFO
+writing dependency_links to ../build/pizza_serving_bot/pizza_serving_bot.egg-info/dependency_links.txt
+writing entry points to ../build/pizza_serving_bot/pizza_serving_bot.egg-info/entry_points.txt
+writing requirements to ../build/pizza_serving_bot/pizza_serving_bot.egg-info/requires.txt
+writing top-level names to ../build/pizza_serving_bot/pizza_serving_bot.egg-info/top_level.txt
+writing manifest file '../build/pizza_serving_bot/pizza_serving_bot.egg-info/SOURCES.txt'
+reading manifest file '../build/pizza_serving_bot/pizza_serving_bot.egg-info/SOURCES.txt'
+writing manifest file '../build/pizza_serving_bot/pizza_serving_bot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build
+creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib
+creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot
+copying pizza_serving_bot/__init__.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot
+creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor
+copying pizza_serving_bot/kitchen_monitor/order_info_node.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor
+copying pizza_serving_bot/kitchen_monitor/__init__.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor
+copying pizza_serving_bot/kitchen_monitor/kitchen_node.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor
+creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order
+copying pizza_serving_bot/table_order/__init__.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order
+copying pizza_serving_bot/table_order/table_node.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order
+creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+copying pizza_serving_bot/amr_controller/amr_node.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+copying pizza_serving_bot/amr_controller/__init__.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+copying pizza_serving_bot/amr_controller/goal_sender.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+copying pizza_serving_bot/amr_controller/order_info_display.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+copying pizza_serving_bot/amr_controller/waypoint_sender.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img
+copying pizza_serving_bot/amr_controller/img/smiling.png -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img
+copying pizza_serving_bot/amr_controller/img/sleeping.png -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img
+running install
+running install_lib
+creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot
+creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor/order_info_node.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor/__init__.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor/kitchen_node.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/__init__.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot
+creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order/__init__.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order/table_node.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order
+creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/amr_node.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/__init__.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/goal_sender.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/img
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img/smiling.png -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/img
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img/sleeping.png -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/img
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/order_info_display.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/waypoint_sender.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor/order_info_node.py to order_info_node.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor/kitchen_node.py to kitchen_node.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order/table_node.py to table_node.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/amr_node.py to amr_node.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/goal_sender.py to goal_sender.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/order_info_display.py to order_info_display.cpython-310.pyc
+byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/waypoint_sender.py to waypoint_sender.cpython-310.pyc
+running install_data
+creating /home/viator/ws/b3_ws/install/pizza_serving_bot/share/ament_index
+creating /home/viator/ws/b3_ws/install/pizza_serving_bot/share/ament_index/resource_index
+creating /home/viator/ws/b3_ws/install/pizza_serving_bot/share/ament_index/resource_index/packages
+copying resource/pizza_serving_bot -> /home/viator/ws/b3_ws/install/pizza_serving_bot/share/ament_index/resource_index/packages
+copying package.xml -> /home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot
+running install_egg_info
+Copying ../build/pizza_serving_bot/pizza_serving_bot.egg-info to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing amr script to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot
+Installing display script to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot
+Installing kitchen script to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot
+Installing order script to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot
+Installing table script to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot
+writing list of installed files to '/home/viator/ws/b3_ws/build/pizza_serving_bot/install.log'

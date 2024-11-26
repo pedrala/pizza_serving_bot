@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pizza_order_msgs/srv/OrderService.srv
+// generated code does not contain a copyright notice
+
+#include "pizza_order_msgs/msg/OrderDetail.idl"
+
+module pizza_order_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct OrderService_Request {
+      int8 order_id;
+
+      int8 table_number;
+
+      int8 detail_id;
+
+      @verbatim (language="comment", text=
+        "주문 세부 항목들을 포함하는 배열")
+      sequence<pizza_order_msgs::msg::OrderDetail> order_details;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct OrderService_Response {
+      boolean order_result;
+    };
+  };
+};

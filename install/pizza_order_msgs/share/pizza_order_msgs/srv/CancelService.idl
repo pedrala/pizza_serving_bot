@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pizza_order_msgs/srv/CancelService.srv
+// generated code does not contain a copyright notice
+
+
+module pizza_order_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct CancelService_Request {
+      int8 order_id;
+
+      int8 table_number;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct CancelService_Response {
+      boolean cancel_result;
+    };
+  };
+};
