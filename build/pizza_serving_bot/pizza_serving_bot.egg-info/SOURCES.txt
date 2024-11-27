@@ -20,7 +20,7 @@ pizza_serving_bot/kitchen_monitor/__init__.py
 pizza_serving_bot/kitchen_monitor/kitchen_node.py
 pizza_serving_bot/kitchen_monitor/order_info_node.py
 pizza_serving_bot/table_order/__init__.py
-pizza_serving_bot/table_order/table_node.py
+pizza_serving_bot/table_order/kiosk_node.py
 resource/pizza_serving_bot
 test/test_copyright.py
 test/test_flake8.py

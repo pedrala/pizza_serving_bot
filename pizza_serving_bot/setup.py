@@ -27,7 +27,7 @@ setup(
             'display = pizza_serving_bot.amr_controller.order_info_display:main',
             'kitchen = pizza_serving_bot.kitchen_monitor.kitchen_node:main',
             'order = pizza_serving_bot.kitchen_monitor.order_info_node:main',
-            'table = pizza_serving_bot.table_order.table_node:main',
+            'kiosk = pizza_serving_bot.table_order.kiosk_node:main',
           
         ],
     },

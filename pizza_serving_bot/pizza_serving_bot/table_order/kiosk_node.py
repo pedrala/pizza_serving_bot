@@ -1,3 +1,7 @@
+import rclpy
+from rclpy.node import Node
+from pizza_order_msgs.srv import OrderService
+from pizza_order_msgs.msg import OrderDetail  # OrderDetail 메시지 임포트
 import sys
 import sqlite3
 from PyQt5.QtWidgets import (
@@ -9,13 +13,24 @@ from PyQt5.QtCore import Qt, QTimer, QTime
 from PyQt5.QtGui import QFont, QPixmap
 from functools import partial
 
-class KioskSystem(QMainWindow):
+class KioskNode(QMainWindow):
     def __init__(self):
         super().__init__()
+        # ROS2 노드 초기화
+        if not rclpy.ok():
+            rclpy.init()  # ROS2 초기화
+
+        self.node = rclpy.create_node('kiosk_node')
+        self.cli = self.node.create_client(OrderService, 'process_order')
+
+        while not self.cli.wait_for_service(timeout_sec=1.0):
+            print("Waiting for OrderService to become available...")
+
         self.setWindowTitle("키오스크 주문 시스템")
         self.setGeometry(100, 100, 1024, 768)
 
-        self.db_path = "/home/rokey/b3_ws/pizza.db"  # 여기에 실제 데이터베이스 경로를 입력하세요.
+        self.db_path = "/home/viator/ws/b3_ws/pizza.db"  # 여기에 실제 데이터베이스 경로를 입력하세요.
+                     
         self.init_data()
         self.initUI()
 
@@ -299,8 +314,13 @@ class KioskSystem(QMainWindow):
         return 0
 
     def place_order(self):
-        table_number = self.table_dropdown.currentText()
-    
+        # 테이블 번호를 입력받고 정수로 변환
+        table_number = int(self.table_dropdown.currentText())
+         
+        # 유효한 테이블 번호 확인
+        if table_number <= 0:
+            raise ValueError("Table number must be a positive integer.")
+        
         if not self.cart:
             QMessageBox.warning(self, "경고", "장바구니에 항목이 없습니다.")
             return
@@ -317,20 +337,40 @@ class KioskSystem(QMainWindow):
 
         # 방금 추가된 주문의 ID를 가져옴
         order_id = cursor.lastrowid
-
-     # 2. OrderDetails 테이블에 주문 항목 추가
+        
+        # 2. OrderDetails 테이블에 주문 항목 추가
+        order_details_for_show = []
         order_details = []
         total_price = 0
+        detail_id = 0
+
         for item_name, quantity in self.cart.items():
+            detail_id += 1
+          
             item_price = self.get_item_price(item_name)
             item_total_price = item_price * quantity
             total_price += item_total_price
-            order_details.append(f"{item_name} x{quantity} ({item_total_price}원)")
+            order_details_for_show.append(f"{item_name} x{quantity} ({item_total_price}원)")
 
-            cursor.execute('''
-                INSERT INTO OrderDetails (order_id, item_name, quantity, total_price)
-                VALUES (?, ?, ?, ?)
-            ''', (order_id, item_name, quantity, item_total_price))
+            #인터페이스 서비스 전달용
+            order_detail = OrderDetail()
+            order_detail.detail_id = detail_id
+            order_detail.item_name = item_name
+            order_detail.quantity = quantity
+            order_detail.price = item_price
+            order_details.append(order_detail)
+
+            # Check if the detail_id already exists
+            cursor.execute('SELECT COUNT(*) FROM OrderDetails WHERE detail_id = ?', (detail_id,))
+            existing = cursor.fetchone()[0]
+
+            if existing == 0:
+                # Proceed with insertion if detail_id does not exist
+                cursor.execute('INSERT INTO OrderDetails (detail_id, order_id, item_name, quantity, total_price) VALUES (?, ?, ?, ?, ?)',
+                                    (detail_id, order_id, item_name, quantity, item_total_price))
+            else:
+                # Handle the case where detail_id exists
+                print(f"Detail ID {detail_id} already exists.")
 
         # 변경 사항을 커밋
         conn.commit()
@@ -343,13 +383,36 @@ class KioskSystem(QMainWindow):
         # 전체 주문 내역에 추가
         self.order_history.append({
             'table_number': table_number,
-            'order_details': ", ".join(order_details),
+            'order_details': ", ".join(order_details_for_show),
             'total': total_price
         })
 
+        request = OrderService.Request()
+        request.order_id = order_id
+        request.table_number = table_number
+        request.detail_id = detail_id
+        request.order_details = order_details
+
+        # ROS2 서비스 호출
+        future = self.cli.call_async(request)
+        future.add_done_callback(self.order_response_callback)
+
         # 사용자에게 주문 완료 메시지 표시
-        order_details_text = "\n".join(order_details)
+        order_details_text = "\n".join(order_details_for_show)
         QMessageBox.information(self, "주문 완료", f"주문 번호 : {order_id}번\n주문이 완료되었습니다.\n주문 내용: \n{order_details_text}\n총 금액: {total_price}원")
+
+    def order_response_callback(self, future):
+        try:
+            response = future.result()
+            if response.order_result:
+                QMessageBox.information(self, "주문 성공", "주문이 성공적으로 접수되었습니다.")
+                self.order_history.append(self.cart)
+                self.cart.clear()
+                self.update_cart_display()
+            else:
+                QMessageBox.critical(self, "주문 실패", "주문 접수가 실패했습니다.")
+        except Exception as e:
+            QMessageBox.critical(self, "주문 실패", f"오류 발생: {e}")
 
     def show_total_orders(self):
     # 선택된 테이블 번호 가져오기
@@ -400,8 +463,11 @@ class KioskSystem(QMainWindow):
     def call_staff(self):
         QMessageBox.information(self, "직원 호출", "직원을 호출하였습니다.")
 
-if __name__ == "__main__":
+def main():
     app = QApplication(sys.argv)
-    window = KioskSystem()
+    window = KioskNode()
     window.show()
     sys.exit(app.exec_())
+
+if __name__ == '__main__':
+    main()

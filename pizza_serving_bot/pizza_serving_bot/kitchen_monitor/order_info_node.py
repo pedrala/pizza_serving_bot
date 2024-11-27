@@ -5,7 +5,7 @@ from pizza_order_msgs import OrderInfo  # 우리가 만든 OrderInfo 메시지 (
 
 class OrderInfoNode(Node):
     def __init__(self):
-        super().__init__('order_info_Node')
+        super().__init__('order_info_node')
         self.publisher = self.create_publisher(OrderInfo, 'order_info', 10)
         self.timer = self.create_timer(1.0, self.publish_order_info)
         self.order_id = 1

@@ -1,15 +1,15 @@
+from pizza_order_msgs.srv import OrderService
 import sys
 import sqlite3
 import rclpy
 from rclpy.node import Node
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget
-from pizza_order_msgs.srv import OrderService
 
 class KitchenNode(Node):
     def __init__(self):
         super().__init__('kitchen_node')
         self.srv = self.create_service(OrderService, 'process_order', self.process_order_callback)
-        self.init_database()
+        #self.init_database()
 
     def init_database(self):
         self.conn = sqlite3.connect('restaurant.db')
@@ -42,18 +42,20 @@ class KitchenNode(Node):
     def process_order_callback(self, request, response):
         self.get_logger().info(f"Processing order: {request.order_id} from table {request.table_number}")
 
+        return response
+
+    def process_order_callback2(self, request, response):
+        self.get_logger().info(f"Processing order: {request.order_id} from table {request.table_number}")
+
         # Insert order into order_table
         self.cursor.execute('INSERT INTO order_table (order_id, table_number) VALUES (?, ?)',
                             (request.order_id, request.table_number))
 
-        # Initialize detail_id counter
-        detail_id = 1  # Start with 1 or other logic for auto-increment
-
+        # Assuming `request.order_details` is a list of OrderDetail objects
         for order_detail in request.order_details:
-            # Insert the details into the database
+            detail_id = order_detail.detail_id  # Assuming the `OrderDetail` message has `detail_id`
             self.cursor.execute('INSERT INTO order_detail (detail_id, order_id, item_id, item_name, quantity, price) VALUES (?, ?, ?, ?, ?, ?)',
                                 (detail_id, request.order_id, order_detail.item_id, order_detail.item_name, order_detail.quantity, order_detail.price))
-            detail_id += 1  # Increment for the next detail
 
         self.conn.commit()
 
