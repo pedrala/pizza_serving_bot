@@ -35,10 +35,11 @@ ros2 run pizza_serving_bot amr
 ### 4. 
 
 ```console
+ros2 run pizza_serving_bot display 
 
 ```
 
 ### 5. 
 
 ```console
-ros2 run pizza_serving_bot display 
+
