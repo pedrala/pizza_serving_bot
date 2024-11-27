@@ -316,7 +316,7 @@ class KioskNode(QMainWindow):
     def place_order(self):
         # 테이블 번호를 입력받고 정수로 변환
         table_number = int(self.table_dropdown.currentText())
-         
+        
         # 유효한 테이블 번호 확인
         if table_number <= 0:
             raise ValueError("Table number must be a positive integer.")
@@ -345,14 +345,22 @@ class KioskNode(QMainWindow):
         detail_id = 0
 
         for item_name, quantity in self.cart.items():
-            detail_id += 1
-          
+            # Find the last detail_id in the OrderDetails table and increment it
+            cursor.execute('SELECT MAX(detail_id) FROM OrderDetails')
+            last_detail_id = cursor.fetchone()[0]
+            
+            # If there's no previous detail_id, start from 1
+            if last_detail_id is None:
+                detail_id = 1
+            else:
+                detail_id = last_detail_id + 1
+            
             item_price = self.get_item_price(item_name)
             item_total_price = item_price * quantity
             total_price += item_total_price
             order_details_for_show.append(f"{item_name} x{quantity} ({item_total_price}원)")
 
-            #인터페이스 서비스 전달용
+            # 인터페이스 서비스 전달용
             order_detail = OrderDetail()
             order_detail.detail_id = detail_id
             order_detail.item_name = item_name
@@ -360,7 +368,7 @@ class KioskNode(QMainWindow):
             order_detail.price = item_price
             order_details.append(order_detail)
 
-            # Check if the detail_id already exists
+            # Check if the detail_id already exists (though this should not happen now)
             cursor.execute('SELECT COUNT(*) FROM OrderDetails WHERE detail_id = ?', (detail_id,))
             existing = cursor.fetchone()[0]
 

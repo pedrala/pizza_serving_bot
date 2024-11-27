@@ -14,7 +14,7 @@ source install/setup.bash
 ## 실행하는 순서
 --------------------------------------------------------------------
 
-### 1. 주문정보 DB 에 저장, ROS2 서비스 요청 결과값 키오스크에 전송. [취소]시 취소 서비스 실행, [완료]시 네비게이션 목표 테이블 토픽 발행, AMR봇 디스플레이에 표시할 주문정보 토픽 발행
+### 1. 주문정보 DB 에 저장, ROS2 서비스 요청 결과값 키오스크에 전송. [취소]시 취소 서비스 실행, [완료]시 네비게이션 목표 테이블로 액션 실행, AMR봇 디스플레이에 표시할 주문정보 토픽 발행 
 
 ```console
 ros2 run pizza_serving_bot kitchen 
@@ -42,4 +42,5 @@ ros2 run pizza_serving_bot display
 ### 5. AMR봇 테이블 목표 위치로 네이게이션
 
 ```console
+ros2 run pizza_serving_bot goal 
 
