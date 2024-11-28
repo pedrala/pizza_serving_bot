@@ -26,7 +26,7 @@ ros2 run pizza_serving_bot kitchen
 ros2 run pizza_serving_bot kiosk 
 ```
 
-### 3. AMR봇 위치정보 발행, in
+### 3. AMR봇 위치정보 발행
 
 ```console
 ros2 run pizza_serving_bot amr 

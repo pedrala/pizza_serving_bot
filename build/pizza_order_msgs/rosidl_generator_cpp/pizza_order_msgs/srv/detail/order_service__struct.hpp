@@ -44,7 +44,7 @@ struct OrderService_Request_
     {
       this->order_id = 0;
       this->table_number = 0;
-      this->detail_id = 0;
+      this->detail_id = 0l;
     }
   }
 
@@ -56,19 +56,19 @@ struct OrderService_Request_
     {
       this->order_id = 0;
       this->table_number = 0;
-      this->detail_id = 0;
+      this->detail_id = 0l;
     }
   }
 
   // field types and members
   using _order_id_type =
-    int8_t;
+    int16_t;
   _order_id_type order_id;
   using _table_number_type =
-    int8_t;
+    int16_t;
   _table_number_type table_number;
   using _detail_id_type =
-    int8_t;
+    int32_t;
   _detail_id_type detail_id;
   using _order_details_type =
     std::vector<pizza_order_msgs::msg::OrderDetail_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<pizza_order_msgs::msg::OrderDetail_<ContainerAllocator>>>;
@@ -76,19 +76,19 @@ struct OrderService_Request_
 
   // setters for named parameter idiom
   Type & set__order_id(
-    const int8_t & _arg)
+    const int16_t & _arg)
   {
     this->order_id = _arg;
     return *this;
   }
   Type & set__table_number(
-    const int8_t & _arg)
+    const int16_t & _arg)
   {
     this->table_number = _arg;
     return *this;
   }
   Type & set__detail_id(
-    const int8_t & _arg)
+    const int32_t & _arg)
   {
     this->detail_id = _arg;
     return *this;

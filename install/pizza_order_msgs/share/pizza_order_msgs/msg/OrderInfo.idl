@@ -6,9 +6,9 @@
 module pizza_order_msgs {
   module msg {
     struct OrderInfo {
-      int8 order_id;
+      int16 order_id;
 
-      int8 table_number;
+      int16 table_number;
 
       string status;
     };

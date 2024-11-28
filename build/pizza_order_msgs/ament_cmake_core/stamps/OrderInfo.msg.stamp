@@ -1,3 +1,3 @@
-int8 order_id 
-int8 table_number 
+int16 order_id 
+int16 table_number 
 string  status 

@@ -64,7 +64,7 @@ bool pizza_order_msgs__srv__order_service__request__convert_from_py(PyObject * _
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->order_id = (int8_t)PyLong_AsLong(field);
+    ros_message->order_id = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // table_number
@@ -73,7 +73,7 @@ bool pizza_order_msgs__srv__order_service__request__convert_from_py(PyObject * _
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->table_number = (int8_t)PyLong_AsLong(field);
+    ros_message->table_number = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // detail_id
@@ -82,7 +82,7 @@ bool pizza_order_msgs__srv__order_service__request__convert_from_py(PyObject * _
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->detail_id = (int8_t)PyLong_AsLong(field);
+    ros_message->detail_id = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // order_details

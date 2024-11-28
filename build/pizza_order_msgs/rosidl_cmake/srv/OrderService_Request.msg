@@ -1,5 +1,5 @@
 #Request
-int8 order_id 
-int8 table_number 
-int8 detail_id 
+int16 order_id 
+int16 table_number 
+int32 detail_id 
 OrderDetail[] order_details  # 주문 세부 항목들을 포함하는 배열

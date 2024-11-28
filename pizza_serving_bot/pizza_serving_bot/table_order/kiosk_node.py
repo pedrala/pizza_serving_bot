@@ -12,16 +12,29 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtCore import Qt, QTimer, QTime
 from PyQt5.QtGui import QFont, QPixmap
 from functools import partial
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 
 class KioskNode(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        qos_profile = QoSProfile(
+            reliability=ReliabilityPolicy.RELIABLE,  
+            depth=10
+        )
+
         # ROS2 노드 초기화
         if not rclpy.ok():
             rclpy.init()  # ROS2 초기화
 
         self.node = rclpy.create_node('kiosk_node')
-        self.cli = self.node.create_client(OrderService, 'process_order')
+
+        # 서비스와 클라이언트 설정
+        self.cli = self.node.create_client(
+            OrderService, 
+            'process_order', 
+            qos_profile=qos_profile  # 키워드 인자로 전달
+        )
 
         while not self.cli.wait_for_service(timeout_sec=1.0):
             print("Waiting for OrderService to become available...")

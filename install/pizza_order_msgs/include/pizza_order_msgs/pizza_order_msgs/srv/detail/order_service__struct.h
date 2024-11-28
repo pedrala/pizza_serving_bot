@@ -25,9 +25,9 @@ extern "C"
 /// Struct defined in srv/OrderService in the package pizza_order_msgs.
 typedef struct pizza_order_msgs__srv__OrderService_Request
 {
-  int8_t order_id;
-  int8_t table_number;
-  int8_t detail_id;
+  int16_t order_id;
+  int16_t table_number;
+  int32_t detail_id;
   /// 주문 세부 항목들을 포함하는 배열
   pizza_order_msgs__msg__OrderDetail__Sequence order_details;
 } pizza_order_msgs__srv__OrderService_Request;

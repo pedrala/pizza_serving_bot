@@ -85,7 +85,7 @@ void resize_function__OrderService_Request__order_details(void * untyped_member,
 static const ::rosidl_typesupport_introspection_cpp::MessageMember OrderService_Request_message_member_array[4] = {
   {
     "order_id",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -102,7 +102,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember OrderService_
   },
   {
     "table_number",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -119,7 +119,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember OrderService_
   },
   {
     "detail_id",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array

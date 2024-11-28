@@ -14,8 +14,8 @@ class OrderInfoDisplay(Node):
         self.order_id = None
         self.table_number = None
 
-        # ROS2 Subscriber
-        self.create_subscription(OrderInfo, '/order_info', self.order_info_callback, 10)
+        # ROS2 서비스 서버
+        self.srv = self.create_service(OrderInfo, 'order_info', self.order_info_callback)
 
     def order_info_callback(self, msg):
         try:

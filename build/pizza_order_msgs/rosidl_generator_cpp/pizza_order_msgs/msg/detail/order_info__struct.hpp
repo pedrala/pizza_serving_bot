@@ -58,10 +58,10 @@ struct OrderInfo_
 
   // field types and members
   using _order_id_type =
-    int8_t;
+    int16_t;
   _order_id_type order_id;
   using _table_number_type =
-    int8_t;
+    int16_t;
   _table_number_type table_number;
   using _status_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
@@ -69,13 +69,13 @@ struct OrderInfo_
 
   // setters for named parameter idiom
   Type & set__order_id(
-    const int8_t & _arg)
+    const int16_t & _arg)
   {
     this->order_id = _arg;
     return *this;
   }
   Type & set__table_number(
-    const int8_t & _arg)
+    const int16_t & _arg)
   {
     this->table_number = _arg;
     return *this;

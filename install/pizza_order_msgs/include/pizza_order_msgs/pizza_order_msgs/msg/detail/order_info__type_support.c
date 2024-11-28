@@ -38,7 +38,7 @@ void pizza_order_msgs__msg__OrderInfo__rosidl_typesupport_introspection_c__Order
 static rosidl_typesupport_introspection_c__MessageMember pizza_order_msgs__msg__OrderInfo__rosidl_typesupport_introspection_c__OrderInfo_message_member_array[3] = {
   {
     "order_id",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -55,7 +55,7 @@ static rosidl_typesupport_introspection_c__MessageMember pizza_order_msgs__msg__
   },
   {
     "table_number",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

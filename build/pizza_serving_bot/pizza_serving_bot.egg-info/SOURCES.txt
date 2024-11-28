@@ -16,6 +16,7 @@ pizza_serving_bot/amr_controller/img/sleeping.png
 pizza_serving_bot/amr_controller/img/smiling.png
 pizza_serving_bot/kitchen_monitor/__init__.py
 pizza_serving_bot/kitchen_monitor/goal_sender.py
+pizza_serving_bot/kitchen_monitor/kitchen.py
 pizza_serving_bot/kitchen_monitor/kitchen_node.py
 pizza_serving_bot/kitchen_monitor/waypoint_sender.py
 pizza_serving_bot/table_order/__init__.py
