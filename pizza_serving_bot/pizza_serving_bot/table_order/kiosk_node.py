@@ -36,13 +36,10 @@ class KioskNode(QMainWindow):
             qos_profile=qos_profile  # 키워드 인자로 전달
         )
 
-        while not self.cli.wait_for_service(timeout_sec=1.0):
-            print("Waiting for OrderService to become available...")
-
         self.setWindowTitle("키오스크 주문 시스템")
         self.setGeometry(100, 100, 1024, 768)
 
-        self.db_path = "/home/viator/ws/b3_ws/pizza.db"  # 여기에 실제 데이터베이스 경로를 입력하세요.
+        self.db_path = "/home/booding/Desktop/pizza.db"  # 여기에 실제 데이터베이스 경로를 입력하세요.
                      
         self.init_data()
         self.initUI()
