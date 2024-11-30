@@ -6,7 +6,7 @@
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order/kiosk_node.py
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/amr_node.py
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/__init__.py
-/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/order_info_display.py
+/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/robot.py
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/img/smiling.png
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/img/sleeping.png
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/__pycache__/__init__.cpython-310.pyc
@@ -17,7 +17,7 @@
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order/__pycache__/kiosk_node.cpython-310.pyc
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/__pycache__/amr_node.cpython-310.pyc
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/__pycache__/__init__.cpython-310.pyc
-/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/__pycache__/order_info_display.cpython-310.pyc
+/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/__pycache__/robot.cpython-310.pyc
 /home/viator/ws/b3_ws/install/pizza_serving_bot/share/ament_index/resource_index/packages/pizza_serving_bot
 /home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/package.xml
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot-0.0.0-py3.10.egg-info/zip-safe
@@ -29,6 +29,5 @@
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot-0.0.0-py3.10.egg-info/PKG-INFO
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot/amr
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot/display
-/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot/goal
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot/kiosk
 /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot/kitchen

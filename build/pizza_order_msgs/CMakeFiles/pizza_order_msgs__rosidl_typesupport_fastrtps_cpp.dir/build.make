@@ -79,8 +79,8 @@ rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_ma
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp: rosidl_adapter/pizza_order_msgs/msg/CallManager.idl
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp: rosidl_adapter/pizza_order_msgs/msg/OrderDetail.idl
-rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp: rosidl_adapter/pizza_order_msgs/msg/OrderInfo.idl
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp: rosidl_adapter/pizza_order_msgs/srv/CancelService.idl
+rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp: rosidl_adapter/pizza_order_msgs/srv/GoalLoc.idl
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp: rosidl_adapter/pizza_order_msgs/srv/OrderService.idl
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
@@ -96,17 +96,17 @@ rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_d
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/order_detail__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/order_detail__rosidl_typesupport_fastrtps_cpp.hpp
 
-rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp
-
-rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/order_info__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/order_info__rosidl_typesupport_fastrtps_cpp.hpp
-
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp
 
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/cancel_service__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/cancel_service__rosidl_typesupport_fastrtps_cpp.hpp
+
+rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/goal_loc__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/goal_loc__rosidl_typesupport_fastrtps_cpp.hpp
 
 rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/order_service__type_support.cpp: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/order_service__type_support.cpp
@@ -142,24 +142,10 @@ CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_detail__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_detail__type_support.cpp -o CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_detail__type_support.cpp.s
 
-CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.o: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make
-CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp
-CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.o: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.o -MF CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.o.d -o CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.o -c /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp
-
-CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp > CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.i
-
-CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp -o CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.s
-
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o -MF CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o.d -o CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o -c /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp
 
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.i: cmake_force
@@ -169,6 +155,20 @@ CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupp
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp -o CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.s
+
+CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.o: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp
+CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.o: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.o -MF CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.o.d -o CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.o -c /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp
+
+CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp > CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.i
+
+CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp -o CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.s
 
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/order_service__type_support.cpp.o: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/order_service__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/order_service__type_support.cpp
@@ -188,8 +188,8 @@ CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupp
 pizza_order_msgs__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
 "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp.o" \
 "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_detail__type_support.cpp.o" \
-"CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.o" \
 "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o" \
+"CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.o" \
 "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/order_service__type_support.cpp.o"
 
 # External object files for target pizza_order_msgs__rosidl_typesupport_fastrtps_cpp
@@ -197,8 +197,8 @@ pizza_order_msgs__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
 
 libpizza_order_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp.o
 libpizza_order_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_detail__type_support.cpp.o
-libpizza_order_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp.o
 libpizza_order_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp.o
+libpizza_order_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp.o
 libpizza_order_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/order_service__type_support.cpp.o
 libpizza_order_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make
 libpizza_order_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
@@ -222,12 +222,12 @@ CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/clean:
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/call_manager__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/call_manager__type_support.cpp
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_detail__type_support.cpp
-CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/dds_fastrtps/order_info__type_support.cpp
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/order_detail__rosidl_typesupport_fastrtps_cpp.hpp
-CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/msg/detail/order_info__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/cancel_service__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/cancel_service__type_support.cpp
+CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/goal_loc__type_support.cpp
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/dds_fastrtps/order_service__type_support.cpp
+CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/goal_loc__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/pizza_order_msgs/srv/detail/order_service__rosidl_typesupport_fastrtps_cpp.hpp
 	cd /home/viator/ws/b3_ws/build/pizza_order_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viator/ws/b3_ws/pizza_order_msgs /home/viator/ws/b3_ws/pizza_order_msgs /home/viator/ws/b3_ws/build/pizza_order_msgs /home/viator/ws/b3_ws/build/pizza_order_msgs /home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend

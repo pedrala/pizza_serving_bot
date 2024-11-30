@@ -364,11 +364,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/msg" TYPE FILE FILES "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs/msg/OrderInfo.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/srv" TYPE FILE FILES "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs/srv/CancelService.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/srv" TYPE FILE FILES "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs/srv/CancelService.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/srv" TYPE FILE FILES "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs/srv/GoalLoc.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -384,10 +384,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/msg" TYPE FILE FILES "/home/viator/ws/b3_ws/pizza_order_msgs/msg/OrderInfo.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/srv" TYPE FILE FILES "/home/viator/ws/b3_ws/pizza_order_msgs/srv/CancelService.srv")
 endif()
 
@@ -397,6 +393,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/srv" TYPE FILE FILES "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_cmake/srv/CancelService_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/srv" TYPE FILE FILES "/home/viator/ws/b3_ws/pizza_order_msgs/srv/GoalLoc.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/srv" TYPE FILE FILES "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_cmake/srv/GoalLoc_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pizza_order_msgs/srv" TYPE FILE FILES "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_cmake/srv/GoalLoc_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

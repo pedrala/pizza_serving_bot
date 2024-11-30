@@ -97,24 +97,10 @@ CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_o
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_detail_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_py/pizza_order_msgs/msg/_order_detail_s.c -o CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_detail_s.c.s
 
-CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/flags.make
-CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.o: rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c
-CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.o -MF CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.o.d -o CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.o -c /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c
-
-CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c > CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.i
-
-CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c -o CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.s
-
 CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o: rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c
 CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o -MF CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o.d -o CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o -c /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c
 
 CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.i: cmake_force
@@ -124,6 +110,20 @@ CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_o
 CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c -o CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.s
+
+CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/flags.make
+CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.o: rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c
+CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.o -MF CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.o.d -o CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.o -c /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c
+
+CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c > CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.i
+
+CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c -o CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.s
 
 CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_order_service_s.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_order_service_s.c.o: rosidl_generator_py/pizza_order_msgs/srv/_order_service_s.c
@@ -143,8 +143,8 @@ CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_o
 pizza_order_msgs__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_call_manager_s.c.o" \
 "CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_detail_s.c.o" \
-"CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.o" \
 "CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o" \
+"CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.o" \
 "CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_order_service_s.c.o"
 
 # External object files for target pizza_order_msgs__rosidl_generator_py
@@ -152,8 +152,8 @@ pizza_order_msgs__rosidl_generator_py_EXTERNAL_OBJECTS =
 
 rosidl_generator_py/pizza_order_msgs/libpizza_order_msgs__rosidl_generator_py.so: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_call_manager_s.c.o
 rosidl_generator_py/pizza_order_msgs/libpizza_order_msgs__rosidl_generator_py.so: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_detail_s.c.o
-rosidl_generator_py/pizza_order_msgs/libpizza_order_msgs__rosidl_generator_py.so: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c.o
 rosidl_generator_py/pizza_order_msgs/libpizza_order_msgs__rosidl_generator_py.so: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c.o
+rosidl_generator_py/pizza_order_msgs/libpizza_order_msgs__rosidl_generator_py.so: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c.o
 rosidl_generator_py/pizza_order_msgs/libpizza_order_msgs__rosidl_generator_py.so: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/rosidl_generator_py/pizza_order_msgs/srv/_order_service_s.c.o
 rosidl_generator_py/pizza_order_msgs/libpizza_order_msgs__rosidl_generator_py.so: CMakeFiles/pizza_order_msgs__rosidl_generator_py.dir/build.make
 rosidl_generator_py/pizza_order_msgs/libpizza_order_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so

@@ -74,14 +74,14 @@ CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/orde
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_detail__builder.hpp
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_detail__struct.hpp
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_detail__traits.hpp
-CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/order_info.hpp
-CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__builder.hpp
-CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__struct.hpp
-CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__traits.hpp
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/cancel_service.hpp
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/cancel_service__builder.hpp
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/cancel_service__struct.hpp
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/cancel_service__traits.hpp
+CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/goal_loc.hpp
+CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__builder.hpp
+CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__struct.hpp
+CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__traits.hpp
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/order_service.hpp
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/order_service__builder.hpp
 CMakeFiles/pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/order_service__struct.hpp
@@ -104,8 +104,8 @@ rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: /opt/ros/humble/shar
 rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: rosidl_adapter/pizza_order_msgs/msg/CallManager.idl
 rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: rosidl_adapter/pizza_order_msgs/msg/OrderDetail.idl
-rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: rosidl_adapter/pizza_order_msgs/msg/OrderInfo.idl
 rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: rosidl_adapter/pizza_order_msgs/srv/CancelService.idl
+rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: rosidl_adapter/pizza_order_msgs/srv/GoalLoc.idl
 rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: rosidl_adapter/pizza_order_msgs/srv/OrderService.idl
 rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
@@ -133,18 +133,6 @@ rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_detail__struct.hpp: rosid
 rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_detail__traits.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_detail__traits.hpp
 
-rosidl_generator_cpp/pizza_order_msgs/msg/order_info.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/msg/order_info.hpp
-
-rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__builder.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__builder.hpp
-
-rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__struct.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__struct.hpp
-
-rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__traits.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__traits.hpp
-
 rosidl_generator_cpp/pizza_order_msgs/srv/cancel_service.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/srv/cancel_service.hpp
 
@@ -156,6 +144,18 @@ rosidl_generator_cpp/pizza_order_msgs/srv/detail/cancel_service__struct.hpp: ros
 
 rosidl_generator_cpp/pizza_order_msgs/srv/detail/cancel_service__traits.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/srv/detail/cancel_service__traits.hpp
+
+rosidl_generator_cpp/pizza_order_msgs/srv/goal_loc.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/srv/goal_loc.hpp
+
+rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__builder.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__builder.hpp
+
+rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__struct.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__struct.hpp
+
+rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__traits.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__traits.hpp
 
 rosidl_generator_cpp/pizza_order_msgs/srv/order_service.hpp: rosidl_generator_cpp/pizza_order_msgs/msg/call_manager.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pizza_order_msgs/srv/order_service.hpp
@@ -177,18 +177,18 @@ pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/call_man
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_detail__builder.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_detail__struct.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_detail__traits.hpp
-pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__builder.hpp
-pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__struct.hpp
-pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/detail/order_info__traits.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/order_detail.hpp
-pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/msg/order_info.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/cancel_service.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/cancel_service__builder.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/cancel_service__struct.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/cancel_service__traits.hpp
+pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__builder.hpp
+pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__struct.hpp
+pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/goal_loc__traits.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/order_service__builder.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/order_service__struct.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/detail/order_service__traits.hpp
+pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/goal_loc.hpp
 pizza_order_msgs__cpp: rosidl_generator_cpp/pizza_order_msgs/srv/order_service.hpp
 pizza_order_msgs__cpp: CMakeFiles/pizza_order_msgs__cpp.dir/build.make
 .PHONY : pizza_order_msgs__cpp

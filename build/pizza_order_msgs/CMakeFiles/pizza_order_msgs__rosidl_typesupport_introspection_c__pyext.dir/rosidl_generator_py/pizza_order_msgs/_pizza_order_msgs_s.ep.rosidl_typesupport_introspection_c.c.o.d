@@ -210,12 +210,12 @@ CMakeFiles/pizza_order_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosid
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__functions.h \
- /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__type_support.h \
- /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__struct.h \
- /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.h \
  /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__type_support.h \
  /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__struct.h \
  /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.h \
+ /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__type_support.h \
+ /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__struct.h \
+ /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.h \
  /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__type_support.h \
  /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__struct.h \
  /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.h

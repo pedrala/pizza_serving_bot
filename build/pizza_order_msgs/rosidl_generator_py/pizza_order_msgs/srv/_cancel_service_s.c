@@ -56,7 +56,7 @@ bool pizza_order_msgs__srv__cancel_service__request__convert_from_py(PyObject * 
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->order_id = (int8_t)PyLong_AsLong(field);
+    ros_message->order_id = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // table_number
@@ -65,7 +65,7 @@ bool pizza_order_msgs__srv__cancel_service__request__convert_from_py(PyObject * 
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->table_number = (int8_t)PyLong_AsLong(field);
+    ros_message->table_number = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 

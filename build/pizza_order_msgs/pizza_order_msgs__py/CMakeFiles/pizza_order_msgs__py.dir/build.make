@@ -71,15 +71,15 @@ pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_c.c
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_call_manager.py
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_order_detail.py
-pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_order_info.py
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_cancel_service.py
+pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_goal_loc.py
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_order_service.py
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/__init__.py
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/__init__.py
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_call_manager_s.c
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_order_detail_s.c
-pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c
+pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c
 pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_order_service_s.c
 
 rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
@@ -97,8 +97,8 @@ rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_f
 rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pizza_order_msgs/msg/CallManager.idl
 rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pizza_order_msgs/msg/OrderDetail.idl
-rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pizza_order_msgs/msg/OrderInfo.idl
 rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pizza_order_msgs/srv/CancelService.idl
+rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pizza_order_msgs/srv/GoalLoc.idl
 rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pizza_order_msgs/srv/OrderService.idl
 rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
@@ -117,11 +117,11 @@ rosidl_generator_py/pizza_order_msgs/msg/_call_manager.py: rosidl_generator_py/p
 rosidl_generator_py/pizza_order_msgs/msg/_order_detail.py: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/msg/_order_detail.py
 
-rosidl_generator_py/pizza_order_msgs/msg/_order_info.py: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/msg/_order_info.py
-
 rosidl_generator_py/pizza_order_msgs/srv/_cancel_service.py: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/srv/_cancel_service.py
+
+rosidl_generator_py/pizza_order_msgs/srv/_goal_loc.py: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/srv/_goal_loc.py
 
 rosidl_generator_py/pizza_order_msgs/srv/_order_service.py: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/srv/_order_service.py
@@ -138,11 +138,11 @@ rosidl_generator_py/pizza_order_msgs/msg/_call_manager_s.c: rosidl_generator_py/
 rosidl_generator_py/pizza_order_msgs/msg/_order_detail_s.c: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/msg/_order_detail_s.c
 
-rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c
-
 rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c
+
+rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c
 
 rosidl_generator_py/pizza_order_msgs/srv/_order_service_s.c: rosidl_generator_py/pizza_order_msgs/_pizza_order_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pizza_order_msgs/srv/_order_service_s.c
@@ -156,11 +156,11 @@ pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_call_manager.py
 pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_call_manager_s.c
 pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_order_detail.py
 pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_order_detail_s.c
-pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_order_info.py
-pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/msg/_order_info_s.c
 pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/__init__.py
 pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_cancel_service.py
 pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_cancel_service_s.c
+pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_goal_loc.py
+pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_goal_loc_s.c
 pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_order_service.py
 pizza_order_msgs__py: rosidl_generator_py/pizza_order_msgs/srv/_order_service_s.c
 pizza_order_msgs__py: pizza_order_msgs__py/CMakeFiles/pizza_order_msgs__py.dir/build.make

@@ -1,7 +1,9 @@
 import rclpy
 from rclpy.node import Node
 from pizza_order_msgs.srv import OrderService
-from pizza_order_msgs.msg import OrderDetail  # OrderDetail 메시지 임포트
+from pizza_order_msgs.msg import OrderDetail  
+from pizza_order_msgs.srv import CancelService
+from pizza_order_msgs.msg import CallManager
 import sys
 import sqlite3
 from PyQt5.QtWidgets import (
@@ -9,41 +11,74 @@ from PyQt5.QtWidgets import (
     QPushButton, QLabel, QListWidget, QGridLayout, QScrollArea,
     QFrame, QComboBox, QMessageBox, QSizePolicy, QListWidgetItem
 )
-from PyQt5.QtCore import Qt, QTimer, QTime
+from PyQt5.QtCore import Qt, QTime, QTimer,pyqtSignal,QThread, QObject
 from PyQt5.QtGui import QFont, QPixmap
 from functools import partial
 from rclpy.qos import QoSProfile, ReliabilityPolicy
 
+db_path = "/home/viator/ws/b3_ws/pizza.db"  # 여기에 실제 데이터베이스 경로를 입력하세요.
+
+
 class KioskNode(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        # ROS2 노드 초기화
+        if not rclpy.ok():
+            rclpy.init()  # ROS2 초기화
 
         qos_profile = QoSProfile(
             reliability=ReliabilityPolicy.RELIABLE,  
             depth=10
         )
 
-        # ROS2 노드 초기화
-        if not rclpy.ok():
-            rclpy.init()  # ROS2 초기화
-
         self.node = rclpy.create_node('kiosk_node')
 
-        # 서비스와 클라이언트 설정
-        self.cli = self.node.create_client(
+        #주문요청 클라이언트 설정
+        self.order_cli = self.node.create_client(
             OrderService, 
             'process_order', 
+            qos_profile=qos_profile 
+        )
+
+        #주문취소 서버 설정
+        self.cancel_ser = self.node.create_service(
+            CancelService, 
+            'cancel_order', 
+            self.cancel_order_callback,
+            qos_profile=qos_profile
+        )
+        
+        #직원호출 토픽 퍼블리쉬 설정
+        self.call_manager_pub = self.node.create_publisher(
+            CallManager, 
+            'call_manager', 
             qos_profile=qos_profile  # 키워드 인자로 전달
         )
 
         self.setWindowTitle("키오스크 주문 시스템")
         self.setGeometry(100, 100, 1024, 768)
-
-        self.db_path = "/home/booding/Desktop/pizza.db"  # 여기에 실제 데이터베이스 경로를 입력하세요.
                      
         self.init_data()
         self.initUI()
 
+    def cancel_order_callback(self, request, response):
+        self.node.get_logger().info(f'주문 취소 요청: order_id={request.order_id}, table_number={request.table_number}')
+        response.status = "Cancelled"
+
+        # 팝업 메시지 전송
+        popup_message = f"테이블 {request.table_number}의 주문이 취소되었습니다."
+        self.signal_bridge.table_call_signal.emit(popup_message)  # PyQt5 신호 전송
+
+        # PyQt5 팝업창 띄우기
+        #QMessageBox.information(self, "주문 취소", popup_message)
+
+        # ROS 로그에 출력
+        self.node.get_logger().info(popup_message)
+
+        return response
+
+    
     def init_data(self):
         # 카테고리별로 메뉴 항목을 가져옵니다.
         self.menu_data = {
@@ -56,27 +91,30 @@ class KioskNode(QMainWindow):
         self.order_history = []
 
     def fetch_menu_items(self, category):
-        conn = sqlite3.connect(self.db_path)
+        conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
 
         # 카테고리별로 데이터를 가져오기 위한 쿼리 작성
         if category == "피자":
             query = '''
             SELECT item_name, price, image FROM Menu
-            WHERE item_id BETWEEN 1 AND 6;
+            WHERE item_id BETWEEN 1 AND 6
+            ORDER BY item_id;  -- item_id를 기준으로 정렬
             '''
         elif category == "음료":
             query = '''
             SELECT item_name, price, image FROM Menu
-            WHERE item_id BETWEEN 7 AND 8;
+            WHERE item_id BETWEEN 7 AND 8
+            ORDER BY item_id;  -- item_id를 기준으로 정렬
             '''
         elif category == "기타":
             query = '''
             SELECT item_name, price, image FROM Menu
-            WHERE item_id BETWEEN 9 AND 12;
+            WHERE item_id BETWEEN 9 AND 12
+            ORDER BY item_id;  -- item_id를 기준으로 정렬
             '''
         else:
-            query = "SELECT item_name, price, image FROM Menu"
+            query = "SELECT item_name, price, image FROM Menu ORDER BY item_id;"  # item_id 기준 정렬
 
         cursor.execute(query)
         items = cursor.fetchall()
@@ -86,6 +124,7 @@ class KioskNode(QMainWindow):
         conn.close()
 
         return menu_items
+
 
     def initUI(self):
         main_widget = QWidget()
@@ -336,7 +375,7 @@ class KioskNode(QMainWindow):
             return
 
         # 1. Orders 테이블에 주문 추가
-        conn = sqlite3.connect(self.db_path)
+        conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
 
         # 주문 상태를 'Pending'으로 설정
@@ -400,7 +439,7 @@ class KioskNode(QMainWindow):
 
         # 전체 주문 내역에 추가
         self.order_history.append({
-            'table_number': table_number,
+            'table_number': str(table_number),
             'order_details': ", ".join(order_details_for_show),
             'total': total_price
         })
@@ -412,7 +451,7 @@ class KioskNode(QMainWindow):
         request.order_details = order_details
 
         # ROS2 서비스 호출
-        future = self.cli.call_async(request)
+        future = self.order_cli.call_async(request)
         future.add_done_callback(self.order_response_callback)
 
         # 사용자에게 주문 완료 메시지 표시
@@ -477,9 +516,22 @@ class KioskNode(QMainWindow):
         # 메시지 박스에 계산서 표시
         QMessageBox.information(self, f"테이블 {selected_table} 계산서", bill_summary)
 
-
+    #CancelService  적용하도록 바꿀 것
     def call_staff(self):
-        QMessageBox.information(self, "직원 호출", "직원을 호출하였습니다.")
+        # 선택된 테이블 번호 가져오기
+        selected_table = self.table_dropdown.currentText()
+
+        # CallManager 메시지 생성 및 필드 설정
+        msg = CallManager()
+        msg.table_number = int(selected_table)  # table_number 필드에 값 설정
+
+        # 메시지를 퍼블리시
+        self.call_manager_pub.publish(msg)
+
+        # 사용자에게 알림 표시
+        QMessageBox.information(self, "직원 호출", f"테이블 {selected_table}에 직원을 호출하였습니다.")
+
+
 
 def main():
     app = QApplication(sys.argv)

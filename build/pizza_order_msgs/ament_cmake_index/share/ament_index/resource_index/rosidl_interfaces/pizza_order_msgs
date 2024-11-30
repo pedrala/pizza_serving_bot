@@ -2,12 +2,14 @@ msg/CallManager.idl
 msg/CallManager.msg
 msg/OrderDetail.idl
 msg/OrderDetail.msg
-msg/OrderInfo.idl
-msg/OrderInfo.msg
 srv/CancelService.idl
 srv/CancelService.srv
 srv/CancelService_Request.msg
 srv/CancelService_Response.msg
+srv/GoalLoc.idl
+srv/GoalLoc.srv
+srv/GoalLoc_Request.msg
+srv/GoalLoc_Response.msg
 srv/OrderService.idl
 srv/OrderService.srv
 srv/OrderService_Request.msg

@@ -68,10 +68,12 @@ include CMakeFiles/pizza_order_msgs.dir/progress.make
 
 CMakeFiles/pizza_order_msgs: /home/viator/ws/b3_ws/pizza_order_msgs/msg/CallManager.msg
 CMakeFiles/pizza_order_msgs: /home/viator/ws/b3_ws/pizza_order_msgs/msg/OrderDetail.msg
-CMakeFiles/pizza_order_msgs: /home/viator/ws/b3_ws/pizza_order_msgs/msg/OrderInfo.msg
 CMakeFiles/pizza_order_msgs: /home/viator/ws/b3_ws/pizza_order_msgs/srv/CancelService.srv
 CMakeFiles/pizza_order_msgs: rosidl_cmake/srv/CancelService_Request.msg
 CMakeFiles/pizza_order_msgs: rosidl_cmake/srv/CancelService_Response.msg
+CMakeFiles/pizza_order_msgs: /home/viator/ws/b3_ws/pizza_order_msgs/srv/GoalLoc.srv
+CMakeFiles/pizza_order_msgs: rosidl_cmake/srv/GoalLoc_Request.msg
+CMakeFiles/pizza_order_msgs: rosidl_cmake/srv/GoalLoc_Response.msg
 CMakeFiles/pizza_order_msgs: /home/viator/ws/b3_ws/pizza_order_msgs/srv/OrderService.srv
 CMakeFiles/pizza_order_msgs: rosidl_cmake/srv/OrderService_Request.msg
 CMakeFiles/pizza_order_msgs: rosidl_cmake/srv/OrderService_Response.msg

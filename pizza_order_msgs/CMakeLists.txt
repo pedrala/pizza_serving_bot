@@ -16,11 +16,11 @@ find_package(rosidl_default_generators REQUIRED)
 set(msg_files
   "msg/CallManager.msg"
   "msg/OrderDetail.msg"
-  "msg/OrderInfo.msg"
 )
 
 set(srv_files
   "srv/CancelService.srv"
+  "srv/GoalLoc.srv"
   "srv/OrderService.srv"
 )
 

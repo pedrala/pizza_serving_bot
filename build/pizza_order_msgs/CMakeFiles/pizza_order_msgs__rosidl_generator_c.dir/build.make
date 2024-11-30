@@ -84,8 +84,8 @@ rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: /opt/ros/humble/share/ro
 rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: rosidl_adapter/pizza_order_msgs/msg/CallManager.idl
 rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: rosidl_adapter/pizza_order_msgs/msg/OrderDetail.idl
-rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: rosidl_adapter/pizza_order_msgs/msg/OrderInfo.idl
 rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: rosidl_adapter/pizza_order_msgs/srv/CancelService.idl
+rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: rosidl_adapter/pizza_order_msgs/srv/GoalLoc.idl
 rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: rosidl_adapter/pizza_order_msgs/srv/OrderService.idl
 rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/pizza_order_msgs/msg/call_manager.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
@@ -113,18 +113,6 @@ rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__struct.h: rosidl_ge
 rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__type_support.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__type_support.h
 
-rosidl_generator_c/pizza_order_msgs/msg/order_info.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/msg/order_info.h
-
-rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.h
-
-rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__struct.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__struct.h
-
-rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__type_support.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__type_support.h
-
 rosidl_generator_c/pizza_order_msgs/srv/cancel_service.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/cancel_service.h
 
@@ -136,6 +124,18 @@ rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__struct.h: rosidl_
 
 rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__type_support.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__type_support.h
+
+rosidl_generator_c/pizza_order_msgs/srv/goal_loc.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/goal_loc.h
+
+rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.h
+
+rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__struct.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__struct.h
+
+rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__type_support.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__type_support.h
 
 rosidl_generator_c/pizza_order_msgs/srv/order_service.h: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/order_service.h
@@ -155,11 +155,11 @@ rosidl_generator_c/pizza_order_msgs/msg/detail/call_manager__functions.c: rosidl
 rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__functions.c: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__functions.c
 
-rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c
-
 rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c
+
+rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c
 
 rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.c: rosidl_generator_c/pizza_order_msgs/msg/call_manager.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.c
@@ -192,24 +192,10 @@ CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_ord
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__functions.c -o CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__functions.c.s
 
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.o: rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.o -MF CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.o.d -o CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.o -c /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c
-
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c > CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.i
-
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c -o CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.s
-
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o: rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o -MF CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o.d -o CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o -c /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c
 
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.i: cmake_force
@@ -219,6 +205,20 @@ CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_ord
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c -o CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.s
+
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.o: rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.o -MF CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.o.d -o CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.o -c /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c
+
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c > CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.i
+
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c -o CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.s
 
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.c.o: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.c.o: rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.c
@@ -238,8 +238,8 @@ CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_ord
 pizza_order_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/call_manager__functions.c.o" \
 "CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__functions.c.o" \
-"CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.o" \
 "CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o" \
+"CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.o" \
 "CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.c.o"
 
 # External object files for target pizza_order_msgs__rosidl_generator_c
@@ -247,8 +247,8 @@ pizza_order_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libpizza_order_msgs__rosidl_generator_c.so: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/call_manager__functions.c.o
 libpizza_order_msgs__rosidl_generator_c.so: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__functions.c.o
-libpizza_order_msgs__rosidl_generator_c.so: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c.o
 libpizza_order_msgs__rosidl_generator_c.so: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c.o
+libpizza_order_msgs__rosidl_generator_c.so: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c.o
 libpizza_order_msgs__rosidl_generator_c.so: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.c.o
 libpizza_order_msgs__rosidl_generator_c.so: CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/build.make
 libpizza_order_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
@@ -275,21 +275,21 @@ CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/p
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__functions.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__struct.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/msg/detail/order_detail__type_support.h
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.c
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__functions.h
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__struct.h
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/msg/detail/order_info__type_support.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/msg/order_detail.h
-CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/msg/order_info.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/cancel_service.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.c
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__functions.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__struct.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/cancel_service__type_support.h
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.c
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__functions.h
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__struct.h
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/goal_loc__type_support.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.c
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__functions.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__struct.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/detail/order_service__type_support.h
+CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/goal_loc.h
 CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pizza_order_msgs/srv/order_service.h
 	cd /home/viator/ws/b3_ws/build/pizza_order_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viator/ws/b3_ws/pizza_order_msgs /home/viator/ws/b3_ws/pizza_order_msgs /home/viator/ws/b3_ws/build/pizza_order_msgs /home/viator/ws/b3_ws/build/pizza_order_msgs /home/viator/ws/b3_ws/build/pizza_order_msgs/CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pizza_order_msgs__rosidl_generator_c.dir/depend

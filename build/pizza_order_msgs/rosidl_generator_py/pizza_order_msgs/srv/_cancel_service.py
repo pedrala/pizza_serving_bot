@@ -60,13 +60,13 @@ class CancelService_Request(metaclass=Metaclass_CancelService_Request):
     ]
 
     _fields_and_field_types = {
-        'order_id': 'int8',
-        'table_number': 'int8',
+        'order_id': 'int16',
+        'table_number': 'int16',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -127,8 +127,8 @@ class CancelService_Request(metaclass=Metaclass_CancelService_Request):
             assert \
                 isinstance(value, int), \
                 "The 'order_id' field must be of type 'int'"
-            assert value >= -128 and value < 128, \
-                "The 'order_id' field must be an integer in [-128, 127]"
+            assert value >= -32768 and value < 32768, \
+                "The 'order_id' field must be an integer in [-32768, 32767]"
         self._order_id = value
 
     @builtins.property
@@ -142,8 +142,8 @@ class CancelService_Request(metaclass=Metaclass_CancelService_Request):
             assert \
                 isinstance(value, int), \
                 "The 'table_number' field must be of type 'int'"
-            assert value >= -128 and value < 128, \
-                "The 'table_number' field must be an integer in [-128, 127]"
+            assert value >= -32768 and value < 32768, \
+                "The 'table_number' field must be an integer in [-32768, 32767]"
         self._table_number = value
 
 

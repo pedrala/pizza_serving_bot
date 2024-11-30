@@ -40,7 +40,7 @@ void CancelService_Request_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember CancelService_Request_message_member_array[2] = {
   {
     "order_id",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -57,7 +57,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember CancelService
   },
   {
     "table_number",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array

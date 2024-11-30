@@ -11,7 +11,7 @@ setup.py
 pizza_serving_bot/__init__.py
 pizza_serving_bot/amr_controller/__init__.py
 pizza_serving_bot/amr_controller/amr_node.py
-pizza_serving_bot/amr_controller/order_info_display.py
+pizza_serving_bot/amr_controller/robot.py
 pizza_serving_bot/amr_controller/img/sleeping.png
 pizza_serving_bot/amr_controller/img/smiling.png
 pizza_serving_bot/kitchen_monitor/__init__.py

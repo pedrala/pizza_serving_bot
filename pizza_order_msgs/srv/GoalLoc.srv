@@ -1,6 +1,9 @@
 #Request
 int16 order_id 
 int16 table_number 
+string status 
 ---
 #Response
-bool cancel_result
+bool navi_result
+float32 x
+float32 y
