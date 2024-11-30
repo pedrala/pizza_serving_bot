@@ -26,21 +26,10 @@ ros2 run pizza_serving_bot kitchen
 ros2 run pizza_serving_bot kiosk 
 ```
 
-### 3. AMR봇 위치정보 발행
+### 3. AMR봇 디스플레이에 구독받은 주문정보, 상태값 표시, 목표테이블로 네비게이션 
 
 ```console
 ros2 run pizza_serving_bot amr 
-```
-
-### 4. AMR봇 디스플레이에 구독받은 주문정보, 상태값 표시
-
-```console
-ros2 run pizza_serving_bot display 
 
 ```
-
-### 5. AMR봇 테이블 목표 위치로 네이게이션
-
-```console
-ros2 run pizza_serving_bot goal 
 
