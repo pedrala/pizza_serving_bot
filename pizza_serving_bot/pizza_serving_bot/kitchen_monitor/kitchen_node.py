@@ -93,9 +93,8 @@ class KitchenServiceNode(Node):
         # 테이블 번호를 가져와서 팝업창에 표시
         self.get_logger().info(f"table number: {msg.table_number}")
 
-        table_number = msg.table_number
-        self.get_logger().info(f"Received call from table {table_number}")
-        popup_message = f"Table {table_number} is calling!"
+        self.get_logger().info(f"테이블번호 {msg.table_number}로부터 직원호출이 요청되었습니다.")
+        popup_message = f"테이블번호 {msg.table_number}로부터 직원호출이 요청되었습니다."
         self.signal_bridge.table_call_signal.emit(popup_message)  # PyQt 신호 전송
 
 class KitchenDisplay(QWidget):
@@ -329,11 +328,10 @@ class KitchenDisplay(QWidget):
             print(f"Error updating order status: {e}")
 
     def call_amr(self, order_id, table_number, status):
-        # GoalLoc 클라이언트를 이용하여 테이블 위치 정보 요청
-        goal_loc_request = GoalLoc.Request()
         print("status: "+ status )
-        print("order_id: "+ order_id)
-    
+        print("order_id: "+ order_id)  
+        # GoalLoc 클라이언트를 이용하여 테이블 위치 정보 요청
+        goal_loc_request = GoalLoc.Request()  
         # order_id를 정수로 변환
         goal_loc_request.order_id = int(order_id)
         goal_loc_request.table_number = int(table_number)
@@ -363,7 +361,7 @@ class KitchenDisplay(QWidget):
         if future.result() is not None:
             result = future.result()
             # 결과 출력
-            print(f"Navigation Result: success={result.navi_result}, "
+            print(f"Navigation Result: success={result.send_result}, "
                     f"x={result.x}, y={result.y}")
         else:
             print("Navigation failed")

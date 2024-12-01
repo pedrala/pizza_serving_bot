@@ -18,9 +18,13 @@ from rclpy.qos import QoSProfile, ReliabilityPolicy
 
 db_path = "/home/viator/ws/b3_ws/pizza.db"  # 여기에 실제 데이터베이스 경로를 입력하세요.
 
+class SignalBridge(QObject):
+    table_call_signal = pyqtSignal(str)  # 테이블 호출 신호
 
 class KioskNode(QMainWindow):
-    def __init__(self):
+    show_popup_signal = pyqtSignal(str)  # 팝업 메시지를 위한 Signal 정의
+
+    def __init__(self, signal_bridge):
         super().__init__()
 
         # ROS2 노드 초기화
@@ -33,6 +37,8 @@ class KioskNode(QMainWindow):
         )
 
         self.node = rclpy.create_node('kiosk_node')
+
+        self.signal_bridge = signal_bridge
 
         #주문요청 클라이언트 설정
         self.order_cli = self.node.create_client(
@@ -62,12 +68,31 @@ class KioskNode(QMainWindow):
         self.init_data()
         self.initUI()
 
+        # Signal-Slot 연결
+        self.show_popup_signal.connect(self.show_popup_message)
+
+        # ROS 2와 연결된 SignalBridge 신호 연결
+        signal_bridge.table_call_signal.connect(self.show_popup_message)
+    
+    def show_popup_message(self, message):
+        """
+        호출된 테이블 번호를 화면에 표시하고 팝업으로 알림을 표시합니다.
+        """
+        self.call_label.setText(message)
+        popup = QMessageBox()
+        popup.setWindowTitle("Call Manager")
+        popup.setText(message)
+        popup.setIcon(QMessageBox.Information)
+        popup.setStandardButtons(QMessageBox.Ok)
+        popup.exec_()
+
+
     def cancel_order_callback(self, request, response):
         self.node.get_logger().info(f'주문 취소 요청: order_id={request.order_id}, table_number={request.table_number}')
         response.status = "Cancelled"
 
         # 팝업 메시지 전송
-        popup_message = f"테이블 {request.table_number}의 주문이 취소되었습니다."
+        popup_message = f"테이블 번호 {request.table_number}의 주문이 취소되었습니다."
         self.signal_bridge.table_call_signal.emit(popup_message)  # PyQt5 신호 전송
 
         # PyQt5 팝업창 띄우기
@@ -529,13 +554,16 @@ class KioskNode(QMainWindow):
         self.call_manager_pub.publish(msg)
 
         # 사용자에게 알림 표시
-        QMessageBox.information(self, "직원 호출", f"테이블 {selected_table}에 직원을 호출하였습니다.")
+        QMessageBox.information(self, "직원 호출", f"테이블 {selected_table}에서 직원을 호출하였습니다.")
 
 
 
 def main():
     app = QApplication(sys.argv)
-    window = KioskNode()
+     # SignalBridge와 노드 생성
+    signal_bridge = SignalBridge()
+
+    window = KioskNode(signal_bridge)
     window.show()
     sys.exit(app.exec_())
 

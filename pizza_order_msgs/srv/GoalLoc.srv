@@ -4,6 +4,6 @@ int16 table_number
 string status 
 ---
 #Response
-bool navi_result
+bool send_result
 float32 x
 float32 y
