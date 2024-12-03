@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pizza_order_msgs/msg/CallManager.msg
+// generated code does not contain a copyright notice
+
+
+module pizza_order_msgs {
+  module msg {
+    struct CallManager {
+      int8 table_number;
+    };
+  };
+};

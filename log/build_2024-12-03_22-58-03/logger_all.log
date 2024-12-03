@@ -1,0 +1,211 @@
+[0.120s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.120s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7582c7612290>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7582c7611d80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7582c7611d80>>)
+[0.262s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.263s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/viator/ws/b3_ws'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extension 'ros'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extensions ['cmake', 'python']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extension 'cmake'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extension 'python'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extensions ['python_setup_py']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot) by extension 'python_setup_py'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/build) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/build) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/build) ignored
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/install) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/install) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/install) ignored
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_order_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_order_msgs) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_order_msgs) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_order_msgs) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_order_msgs) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_order_msgs) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_order_msgs) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_order_msgs) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_order_msgs) by extension 'ros'
+[0.287s] DEBUG:colcon.colcon_core.package_identification:Package 'pizza_serving_bot/pizza_order_msgs' with type 'ros.ament_cmake' and name 'pizza_order_msgs'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_serving_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_serving_bot) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_serving_bot) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_serving_bot) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_serving_bot) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_serving_bot) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_serving_bot) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_serving_bot) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(pizza_serving_bot/pizza_serving_bot) by extension 'ros'
+[0.288s] DEBUG:colcon.colcon_core.package_identification:Package 'pizza_serving_bot/pizza_serving_bot' with type 'ros.ament_python' and name 'pizza_serving_bot'
+[0.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.305s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/viator/ws/b3_ws/install/pizza_serving_bot' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.306s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/viator/ws/b3_ws/install/pizza_order_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.306s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/viator/ws/b3_ws/install/pizza_order_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.306s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/viator/ws/b3_ws/install
+[0.307s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/viator/turtlebot3_ws/install
+[0.308s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 362 installed packages in /opt/ros/humble
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_order_msgs' build argument 'cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_order_msgs' build argument 'cmake_target' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_order_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_order_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_order_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_order_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_order_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_order_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_order_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.352s] DEBUG:colcon.colcon_core.verb:Building package 'pizza_order_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/viator/ws/b3_ws/build/pizza_order_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/viator/ws/b3_ws/install/pizza_order_msgs', 'merge_install': False, 'path': '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'pizza_serving_bot' build argument 'cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'pizza_serving_bot' build argument 'cmake_target' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'pizza_serving_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'pizza_serving_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'pizza_serving_bot' build argument 'cmake_clean_first' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'pizza_serving_bot' build argument 'cmake_force_configure' from command line to 'False'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'pizza_serving_bot' build argument 'ament_cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'pizza_serving_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.353s] Level 5:colcon.colcon_core.verb:set package 'pizza_serving_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.353s] DEBUG:colcon.colcon_core.verb:Building package 'pizza_serving_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/viator/ws/b3_ws/build/pizza_serving_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/viator/ws/b3_ws/install/pizza_serving_bot', 'merge_install': False, 'path': '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_serving_bot', 'symlink_install': False, 'test_result_base': None}
+[0.353s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.354s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.354s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs' with build type 'ament_cmake'
+[0.354s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs'
+[0.356s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/viator/ws/b3_ws/build/pizza_order_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/viator/ws/b3_ws/install/pizza_serving_bot:/home/viator/turtlebot3_ws/install/turtlebot3_teleop:/home/viator/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs -DCMAKE_INSTALL_PREFIX=/home/viator/ws/b3_ws/install/pizza_order_msgs
+[1.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/viator/ws/b3_ws/build/pizza_order_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/viator/ws/b3_ws/install/pizza_serving_bot:/home/viator/turtlebot3_ws/install/turtlebot3_teleop:/home/viator/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs -DCMAKE_INSTALL_PREFIX=/home/viator/ws/b3_ws/install/pizza_order_msgs
+[1.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/viator/ws/b3_ws/build/pizza_order_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/viator/ws/b3_ws/install/pizza_serving_bot:/home/viator/turtlebot3_ws/install/turtlebot3_teleop:/home/viator/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/viator/ws/b3_ws/build/pizza_order_msgs -- -j4 -l4
+[8.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/viator/ws/b3_ws/build/pizza_order_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/viator/ws/b3_ws/install/pizza_serving_bot:/home/viator/turtlebot3_ws/install/turtlebot3_teleop:/home/viator/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/viator/ws/b3_ws/build/pizza_order_msgs -- -j4 -l4
+[8.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/viator/ws/b3_ws/build/pizza_order_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/viator/ws/b3_ws/install/pizza_serving_bot:/home/viator/turtlebot3_ws/install/turtlebot3_teleop:/home/viator/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/viator/ws/b3_ws/build/pizza_order_msgs
+[8.659s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pizza_order_msgs)
+[8.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/viator/ws/b3_ws/build/pizza_order_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/viator/ws/b3_ws/install/pizza_serving_bot:/home/viator/turtlebot3_ws/install/turtlebot3_teleop:/home/viator/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/viator/ws/b3_ws/build/pizza_order_msgs
+[8.661s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs' for CMake module files
+[8.661s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs' for CMake config files
+[8.662s] Level 1:colcon.colcon_core.shell:create_environment_hook('pizza_order_msgs', 'cmake_prefix_path')
+[8.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/cmake_prefix_path.ps1'
+[8.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/cmake_prefix_path.dsv'
+[8.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/cmake_prefix_path.sh'
+[8.664s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/lib'
+[8.664s] Level 1:colcon.colcon_core.shell:create_environment_hook('pizza_order_msgs', 'ld_library_path_lib')
+[8.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/ld_library_path_lib.ps1'
+[8.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/ld_library_path_lib.dsv'
+[8.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/ld_library_path_lib.sh'
+[8.665s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/bin'
+[8.665s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/lib/pkgconfig/pizza_order_msgs.pc'
+[8.665s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/lib/python3.10/site-packages'
+[8.665s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/bin'
+[8.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.ps1'
+[8.666s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.dsv'
+[8.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.sh'
+[8.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.bash'
+[8.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.zsh'
+[8.668s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/viator/ws/b3_ws/install/pizza_order_msgs/share/colcon-core/packages/pizza_order_msgs)
+[8.669s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pizza_order_msgs)
+[8.669s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs' for CMake module files
+[8.669s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs' for CMake config files
+[8.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('pizza_order_msgs', 'cmake_prefix_path')
+[8.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/cmake_prefix_path.ps1'
+[8.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/cmake_prefix_path.dsv'
+[8.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/cmake_prefix_path.sh'
+[8.671s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/lib'
+[8.671s] Level 1:colcon.colcon_core.shell:create_environment_hook('pizza_order_msgs', 'ld_library_path_lib')
+[8.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/ld_library_path_lib.ps1'
+[8.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/ld_library_path_lib.dsv'
+[8.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/hook/ld_library_path_lib.sh'
+[8.672s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/bin'
+[8.672s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/lib/pkgconfig/pizza_order_msgs.pc'
+[8.672s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/lib/python3.10/site-packages'
+[8.672s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_order_msgs/bin'
+[8.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.ps1'
+[8.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.dsv'
+[8.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.sh'
+[8.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.bash'
+[8.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_order_msgs/share/pizza_order_msgs/package.zsh'
+[8.674s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/viator/ws/b3_ws/install/pizza_order_msgs/share/colcon-core/packages/pizza_order_msgs)
+[8.675s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_serving_bot' with build type 'ament_python'
+[8.675s] Level 1:colcon.colcon_core.shell:create_environment_hook('pizza_serving_bot', 'ament_prefix_path')
+[8.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/hook/ament_prefix_path.ps1'
+[8.676s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/hook/ament_prefix_path.dsv'
+[8.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/hook/ament_prefix_path.sh'
+[8.677s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.677s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.926s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_serving_bot'
+[8.927s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.927s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.255s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_serving_bot': PYTHONPATH=/home/viator/ws/b3_ws/build/pizza_serving_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pizza_serving_bot build --build-base /home/viator/ws/b3_ws/build/pizza_serving_bot/build install --record /home/viator/ws/b3_ws/build/pizza_serving_bot/install.log --single-version-externally-managed install_data
+[9.540s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_serving_bot' for CMake module files
+[9.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_serving_bot' returned '0': PYTHONPATH=/home/viator/ws/b3_ws/build/pizza_serving_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pizza_serving_bot build --build-base /home/viator/ws/b3_ws/build/pizza_serving_bot/build install --record /home/viator/ws/b3_ws/build/pizza_serving_bot/install.log --single-version-externally-managed install_data
+[9.541s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_serving_bot' for CMake config files
+[9.542s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_serving_bot/lib'
+[9.542s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_serving_bot/bin'
+[9.542s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pkgconfig/pizza_serving_bot.pc'
+[9.542s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages'
+[9.542s] Level 1:colcon.colcon_core.shell:create_environment_hook('pizza_serving_bot', 'pythonpath')
+[9.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/hook/pythonpath.ps1'
+[9.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/hook/pythonpath.dsv'
+[9.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/hook/pythonpath.sh'
+[9.543s] Level 1:colcon.colcon_core.environment:checking '/home/viator/ws/b3_ws/install/pizza_serving_bot/bin'
+[9.543s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pizza_serving_bot)
+[9.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/package.ps1'
+[9.544s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/package.dsv'
+[9.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/package.sh'
+[9.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/package.bash'
+[9.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/package.zsh'
+[9.545s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/viator/ws/b3_ws/install/pizza_serving_bot/share/colcon-core/packages/pizza_serving_bot)
+[9.545s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.545s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.545s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.545s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.550s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.550s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.550s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.562s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.562s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/viator/ws/b3_ws/install/local_setup.ps1'
+[9.563s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/viator/ws/b3_ws/install/_local_setup_util_ps1.py'
+[9.566s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/viator/ws/b3_ws/install/setup.ps1'
+[9.568s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/viator/ws/b3_ws/install/local_setup.sh'
+[9.569s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/viator/ws/b3_ws/install/_local_setup_util_sh.py'
+[9.569s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/viator/ws/b3_ws/install/setup.sh'
+[9.571s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/viator/ws/b3_ws/install/local_setup.bash'
+[9.572s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/viator/ws/b3_ws/install/setup.bash'
+[9.573s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/viator/ws/b3_ws/install/local_setup.zsh'
+[9.573s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/viator/ws/b3_ws/install/setup.zsh'

@@ -1,0 +1,5 @@
+/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:msg/CallManager.idl
+/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:msg/OrderDetail.idl
+/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:srv/CancelService.idl
+/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:srv/GoalLoc.idl
+/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:srv/OrderService.idl

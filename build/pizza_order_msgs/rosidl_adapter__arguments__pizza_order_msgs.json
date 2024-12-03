@@ -1,0 +1,10 @@
+{
+  "package_name": "pizza_order_msgs",
+  "non_idl_tuples": [
+    "/home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs:msg/CallManager.msg",
+    "/home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs:msg/OrderDetail.msg",
+    "/home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs:srv/CancelService.srv",
+    "/home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs:srv/GoalLoc.srv",
+    "/home/viator/ws/b3_ws/pizza_serving_bot/pizza_order_msgs:srv/OrderService.srv"
+  ]
+}

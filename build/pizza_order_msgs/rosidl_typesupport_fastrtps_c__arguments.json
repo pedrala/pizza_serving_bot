@@ -1,0 +1,33 @@
+{
+  "package_name": "pizza_order_msgs",
+  "output_dir": "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_typesupport_fastrtps_c/pizza_order_msgs",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
+  "idl_tuples": [
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:msg/CallManager.idl",
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:msg/OrderDetail.idl",
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:srv/CancelService.idl",
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:srv/GoalLoc.idl",
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs:srv/OrderService.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs/msg/CallManager.idl",
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs/msg/OrderDetail.idl",
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs/srv/CancelService.idl",
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs/srv/GoalLoc.idl",
+    "/home/viator/ws/b3_ws/build/pizza_order_msgs/rosidl_adapter/pizza_order_msgs/srv/OrderService.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

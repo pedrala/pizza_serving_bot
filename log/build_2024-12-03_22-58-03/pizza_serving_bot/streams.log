@@ -1,0 +1,76 @@
+[0.579s] Invoking command in '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_serving_bot': PYTHONPATH=/home/viator/ws/b3_ws/build/pizza_serving_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pizza_serving_bot build --build-base /home/viator/ws/b3_ws/build/pizza_serving_bot/build install --record /home/viator/ws/b3_ws/build/pizza_serving_bot/install.log --single-version-externally-managed install_data
+[0.797s] running egg_info
+[0.798s] creating ../../build/pizza_serving_bot/pizza_serving_bot.egg-info
+[0.798s] writing ../../build/pizza_serving_bot/pizza_serving_bot.egg-info/PKG-INFO
+[0.798s] writing dependency_links to ../../build/pizza_serving_bot/pizza_serving_bot.egg-info/dependency_links.txt
+[0.798s] writing entry points to ../../build/pizza_serving_bot/pizza_serving_bot.egg-info/entry_points.txt
+[0.798s] writing requirements to ../../build/pizza_serving_bot/pizza_serving_bot.egg-info/requires.txt
+[0.798s] writing top-level names to ../../build/pizza_serving_bot/pizza_serving_bot.egg-info/top_level.txt
+[0.799s] writing manifest file '../../build/pizza_serving_bot/pizza_serving_bot.egg-info/SOURCES.txt'
+[0.801s] reading manifest file '../../build/pizza_serving_bot/pizza_serving_bot.egg-info/SOURCES.txt'
+[0.801s] writing manifest file '../../build/pizza_serving_bot/pizza_serving_bot.egg-info/SOURCES.txt'
+[0.801s] running build
+[0.802s] running build_py
+[0.802s] creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build
+[0.802s] creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib
+[0.802s] creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot
+[0.802s] copying pizza_serving_bot/__init__.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot
+[0.802s] creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+[0.802s] copying pizza_serving_bot/amr_controller/amr_node.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+[0.802s] copying pizza_serving_bot/amr_controller/__init__.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+[0.802s] copying pizza_serving_bot/amr_controller/goal_saver.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller
+[0.802s] creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order
+[0.802s] copying pizza_serving_bot/table_order/test.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order
+[0.802s] copying pizza_serving_bot/table_order/__init__.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order
+[0.803s] copying pizza_serving_bot/table_order/kiosk_node.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order
+[0.803s] creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor
+[0.803s] copying pizza_serving_bot/kitchen_monitor/kitchen_node.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor
+[0.803s] copying pizza_serving_bot/kitchen_monitor/__init__.py -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor
+[0.803s] creating /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img
+[0.803s] copying pizza_serving_bot/amr_controller/img/sleeping.svg -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img
+[0.803s] copying pizza_serving_bot/amr_controller/img/running.svg -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img
+[0.803s] copying pizza_serving_bot/amr_controller/img/smiling.svg -> /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img
+[0.804s] running install
+[0.804s] running install_lib
+[0.805s] creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot
+[0.805s] creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+[0.805s] creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/img
+[0.805s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img/sleeping.svg -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/img
+[0.805s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img/running.svg -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/img
+[0.805s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/img/smiling.svg -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/img
+[0.805s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/amr_node.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+[0.805s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/__init__.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+[0.805s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/amr_controller/goal_saver.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller
+[0.805s] creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order
+[0.805s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order/test.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order
+[0.805s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order/__init__.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order
+[0.805s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/table_order/kiosk_node.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order
+[0.806s] creating /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor
+[0.806s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor/kitchen_node.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor
+[0.806s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/kitchen_monitor/__init__.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor
+[0.806s] copying /home/viator/ws/b3_ws/build/pizza_serving_bot/build/lib/pizza_serving_bot/__init__.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot
+[0.806s] byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/amr_node.py to amr_node.cpython-310.pyc
+[0.809s] byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/__init__.py to __init__.cpython-310.pyc
+[0.809s] byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/amr_controller/goal_saver.py to goal_saver.cpython-310.pyc
+[0.809s] byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order/test.py to test.cpython-310.pyc
+[0.809s] byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order/__init__.py to __init__.cpython-310.pyc
+[0.809s] byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/table_order/kiosk_node.py to kiosk_node.cpython-310.pyc
+[0.812s] byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor/kitchen_node.py to kitchen_node.cpython-310.pyc
+[0.814s] byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/kitchen_monitor/__init__.py to __init__.cpython-310.pyc
+[0.814s] byte-compiling /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot/__init__.py to __init__.cpython-310.pyc
+[0.814s] running install_data
+[0.815s] creating /home/viator/ws/b3_ws/install/pizza_serving_bot/share/ament_index
+[0.815s] creating /home/viator/ws/b3_ws/install/pizza_serving_bot/share/ament_index/resource_index
+[0.815s] creating /home/viator/ws/b3_ws/install/pizza_serving_bot/share/ament_index/resource_index/packages
+[0.815s] copying resource/pizza_serving_bot -> /home/viator/ws/b3_ws/install/pizza_serving_bot/share/ament_index/resource_index/packages
+[0.815s] copying package.xml -> /home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot
+[0.815s] creating /home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/launch
+[0.815s] copying pizza_serving_bot/launch/pizza_serving_bot.launch.py -> /home/viator/ws/b3_ws/install/pizza_serving_bot/share/pizza_serving_bot/launch
+[0.815s] running install_egg_info
+[0.818s] Copying ../../build/pizza_serving_bot/pizza_serving_bot.egg-info to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages/pizza_serving_bot-0.0.0-py3.10.egg-info
+[0.818s] running install_scripts
+[0.839s] Installing amr script to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot
+[0.840s] Installing kiosk script to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot
+[0.840s] Installing kitchen script to /home/viator/ws/b3_ws/install/pizza_serving_bot/lib/pizza_serving_bot
+[0.840s] writing list of installed files to '/home/viator/ws/b3_ws/build/pizza_serving_bot/install.log'
+[0.865s] Invoked command in '/home/viator/ws/b3_ws/pizza_serving_bot/pizza_serving_bot' returned '0': PYTHONPATH=/home/viator/ws/b3_ws/build/pizza_serving_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/viator/ws/b3_ws/install/pizza_serving_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pizza_serving_bot build --build-base /home/viator/ws/b3_ws/build/pizza_serving_bot/build install --record /home/viator/ws/b3_ws/build/pizza_serving_bot/install.log --single-version-externally-managed install_data

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "pizza_order_msgs__py",
+		"source" : "/home/viator/ws/b3_ws/build/pizza_order_msgs/pizza_order_msgs__py"
+	}
+}

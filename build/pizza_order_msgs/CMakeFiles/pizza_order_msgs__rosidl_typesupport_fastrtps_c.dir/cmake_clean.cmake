@@ -1,0 +1,29 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/msg/detail/call_manager__type_support_c.cpp.o"
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/msg/detail/call_manager__type_support_c.cpp.o.d"
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/msg/detail/order_detail__type_support_c.cpp.o"
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/msg/detail/order_detail__type_support_c.cpp.o.d"
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/cancel_service__type_support_c.cpp.o"
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/cancel_service__type_support_c.cpp.o.d"
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/goal_loc__type_support_c.cpp.o"
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/goal_loc__type_support_c.cpp.o.d"
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/order_service__type_support_c.cpp.o"
+  "CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/order_service__type_support_c.cpp.o.d"
+  "libpizza_order_msgs__rosidl_typesupport_fastrtps_c.pdb"
+  "libpizza_order_msgs__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/msg/detail/call_manager__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/msg/detail/call_manager__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/msg/detail/order_detail__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/msg/detail/order_detail__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/cancel_service__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/cancel_service__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/goal_loc__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/goal_loc__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/order_service__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/pizza_order_msgs/srv/detail/order_service__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/pizza_order_msgs__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

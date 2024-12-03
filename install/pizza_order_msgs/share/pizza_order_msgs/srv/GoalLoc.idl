@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pizza_order_msgs/srv/GoalLoc.srv
+// generated code does not contain a copyright notice
+
+
+module pizza_order_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct GoalLoc_Request {
+      int16 order_id;
+
+      int16 table_number;
+
+      string status;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct GoalLoc_Response {
+      boolean send_result;
+
+      float x;
+
+      float y;
+    };
+  };
+};
