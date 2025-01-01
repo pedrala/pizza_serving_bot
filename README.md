@@ -1,5 +1,5 @@
+## Description
 This project aims to implement an AMR service robot to deliver food at a pizza restaurant.
-=============================================================================================
 
 ## Capture
 <p align="center">
@@ -18,7 +18,6 @@ This project aims to implement an AMR service robot to deliver food at a pizza r
 
 
 ## 패키지 빌드
---------------------------------------------------------------------
 
 ```console
 cd ~/b3_ws
@@ -28,7 +27,6 @@ colcon build
 source install/setup.bash
 ```
 ## 실행하는 순서
---------------------------------------------------------------------
 
 
 ### 0. API서버 실행(DB 저장 및 조회)
