@@ -16,10 +16,10 @@ This project aims to implement an AMR service robot to deliver food at a pizza r
   <img src="capture/servicebot_status_ready.png" alt="servicebot_status_ready" width="200">
 </p>
 
-## Demo
-<p align="center">
-  <img src="capture/pizza_servingbot_demo_short.mp4" alt="pizza_servingbot_demo" width="200">
-</p>
+## Demo Video
+
+[pizza_servingbot_demo](capture/pizza_servingbot_demo_short.mp4)
+
 
 ## 패키지 빌드
 
