@@ -1,6 +1,22 @@
 This project aims to implement an AMR service robot to deliver food at a pizza restaurant.
 =============================================================================================
 
+## Capture
+<p align="center">
+  <img src="capture/kiosk_order.png" alt="kiosk_order" width="500">
+  <img src="capture/order_confirm.png" alt="order_confirm" width="200">
+</p>
+
+<p align="center">
+  <img src="capture/kitchen_display.png" alt="kitchen_display.png" width="1000">
+</p>
+
+<p align="center">
+  <img src="capture/servicebot_status.png" alt="servicebot_status" width="300">
+  <img src="capture/servicebot_status_ready.png" alt="servicebot_status_ready" width="300">
+</p>
+
+
 ## 패키지 빌드
 --------------------------------------------------------------------
 
