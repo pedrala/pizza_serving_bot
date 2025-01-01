@@ -1,5 +1,5 @@
 ## Description
-This project aims to implement an AMR service robot to deliver food at a pizza restaurant.
+피자가게의 테이블에서 주문을 하면 주방의 모니터에 주문받은 내용이 보여집니다. 직원이 확인을 누르면 테이블번호가 AMR봇에 전달됩니다. 미리 정의된 테이블의 좌표로 주행을 시작합니다. AMR봇이 주문을 받기 전에는 Waiting 상태였다가 주행이 시작되면 상태가 Moving 으로 바뀌며 그 상태가 디스플레이에 표시됩니다.
 
 ## Capture
 <p align="center">
