@@ -12,8 +12,8 @@ This project aims to implement an AMR service robot to deliver food at a pizza r
 </p>
 
 <p align="center">
-  <img src="capture/servicebot_status.png" alt="servicebot_status" width="300">
-  <img src="capture/servicebot_status_ready.png" alt="servicebot_status_ready" width="300">
+  <img src="capture/servicebot_status.png" alt="servicebot_status" width="200">
+  <img src="capture/servicebot_status_ready.png" alt="servicebot_status_ready" width="200">
 </p>
 
 
