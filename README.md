@@ -16,6 +16,10 @@
   <img src="capture/servicebot_status_ready.png" alt="servicebot_status_ready" width="200">
 </p>
 
+<p align="center">
+  <img src="capture/pizza_serving_demo_full.png" alt="pizza_serving_demo" width="1000">
+</p>
+
 ## Demo Video
 
 [pizza_servingbot_demo](capture/pizza_servingbot_demo_short.mp4)
