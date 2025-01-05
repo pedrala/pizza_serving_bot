@@ -37,7 +37,8 @@ source install/setup.bash
 ## The order of execution
 
 
-### 1. Running the API server (storing and querying DB)
+### 1. Running the API server 
+store order infomation and query DB
 
 ```console
 python3 api_server.py
