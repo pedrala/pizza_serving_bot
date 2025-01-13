@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # SQLite 데이터베이스 연결 함수
 def get_db_connection():
-    conn = sqlite3.connect('/home/viator/ws/b3p1_ws/pizza.db')  # 실제 DB 경로로 수정 필요
+    conn = sqlite3.connect('/home/viator/ws/b3p1_ws/asset/pizza.db')  # 실제 DB 경로로 수정 필요
     conn.row_factory = sqlite3.Row
     return conn
 
